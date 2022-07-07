@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+$font-1: "Roboto", sans-serif;
+$color-1: rgb(37, 135, 1);
+$color-2: rgba(242, 133, 0, 1);
+// Base;
+* {
+  box-sizing: border-box;
+  font-family: $font-1;
+}
+
+.Green {
+  background: rgb(37, 135, 1);
+  background: linear-gradient(
+    218deg,
+    rgba(37, 135, 1, 1) 79%,
+    rgba(242, 133, 0, 1) 79%
+  );
+}
+
+li {
+  list-style-type: none;
+}
+a.nav-link {
+  color: white;
+}
+
+a.nav-link:hover {
+  color: rgb(253, 110, 0);
+}
