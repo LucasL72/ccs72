@@ -7,7 +7,12 @@ import React from "react";
 const Navigbar = () => {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" className="Green" variant="dark">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        className="Green rounded-bottom shadow p-3 mb-3 bg-white"
+        variant="dark"
+      >
         <Container>
           <Navbar.Brand href="/">
             <img
@@ -48,6 +53,9 @@ const Navigbar = () => {
               <Nav.Item>
                 <Nav.Link href="/#/Contact">Contact</Nav.Link>
               </Nav.Item>{" "}
+              <Nav.Item>
+                <Nav.Link href="/#/admin">admin</Nav.Link>
+              </Nav.Item>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -3,11 +3,12 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer = () => {
   return (
-    <div className="Footer">
+    <div className="Footer rounded-top rounded-lg">
       <div className="text-center">
         <Nav.Link href="/">
           <img alt="Logo" src="../logo.png" width="125" height="50" />
@@ -22,12 +23,34 @@ const Footer = () => {
                 <Nav.Item>
                   <Nav.Link href="/">Accueil</Nav.Link>
                 </Nav.Item>
+                <NavDropdown
+                  title="Nos Réalisations"
+                  id="collasible-nav-dropdown"
+                  className="text-decoration-none"
+                >
+                  <NavDropdown.Item href="/#/Carport">
+                    Carport Bois
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/#/Charpente">
+                    Charpente/Couvertures/Zingueries
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/#/Pergolas">
+                    Pergolas Bois
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/#/Velux">Velux</NavDropdown.Item>
+                </NavDropdown>
                 <Nav.Item>
                   {" "}
                   <Nav.Link href="/#/Photos">Nos Photos</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link href="/#/Contact">Contact</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="/#/admin">admin</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Col>

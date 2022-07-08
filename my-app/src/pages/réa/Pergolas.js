@@ -5,7 +5,7 @@ const Pergolas = () => {
   return (
     <div>
       <MainLayout>
-        <h1>Pergolas</h1>
+        <h1 className="text-center ssligne">Pergolas</h1>
       </MainLayout>
     </div>
   );

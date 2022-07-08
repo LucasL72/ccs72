@@ -5,7 +5,7 @@ const Actu = () => {
   return (
     <div>
       <MainLayout>
-        <h1>Actu</h1>
+        <h1 className="text-center ssligne">Actu</h1>
       </MainLayout>
     </div>
   );

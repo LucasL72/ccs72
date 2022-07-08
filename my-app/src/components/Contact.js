@@ -10,7 +10,7 @@ import EmailIcon from "@mui/icons-material/Email";
 const Contact = () => {
   return (
     <div className=" mb-3">
-      <h3 className="text-center">Nous Contacter</h3>
+      <h4 className="text-center ssligne">Nous Contacter</h4>
       <Container>
         <Row>
           <Col md={6}>

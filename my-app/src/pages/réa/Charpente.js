@@ -5,7 +5,7 @@ const Charpente = () => {
   return (
     <div>
       <MainLayout>
-        <h1>Charpente</h1>
+        <h1 className="text-center ssligne">Charpente</h1>
       </MainLayout>
     </div>
   );

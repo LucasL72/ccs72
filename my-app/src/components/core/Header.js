@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const Header = () => {
     return (
-        <Carousel fade>
+        <Carousel className="rounded" fade>
         <Carousel.Item>
             <div className="banner1"></div>
         </Carousel.Item>

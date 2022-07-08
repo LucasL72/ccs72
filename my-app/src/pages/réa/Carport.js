@@ -5,7 +5,7 @@ const Carport = () => {
   return (
     <div>
       <MainLayout>
-        <h1>Carport</h1>
+        <h1 className="text-center ssligne">Carport</h1>
       </MainLayout>
     </div>
   );
