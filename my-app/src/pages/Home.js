@@ -1,6 +1,6 @@
 import React from "react";
 import Blog from "../components/Blog";
-import Contact from "../components/Contact";
+import FormContact from "../components/FormContact";
 import Events from "../components/Events";
 import MainLayout from "../layouts/MainLayout";
 
@@ -10,7 +10,7 @@ const Home = () => {
       <MainLayout>
         <Blog />
         <Events />
-        <Contact />
+        <FormContact />
       </MainLayout>
     </div>
   );

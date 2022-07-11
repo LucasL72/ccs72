@@ -2,6 +2,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import PhoneIcon from "@mui/icons-material/Phone";
 import React from "react";
 
 const Navigbar = () => {
@@ -10,7 +11,7 @@ const Navigbar = () => {
       <Navbar
         collapseOnSelect
         expand="lg"
-        className="Green rounded-bottom shadow p-3 mb-3 bg-white"
+        className="Green rounded-bottom shadow p-3 bg-white"
         variant="dark"
       >
         <Container>
@@ -56,6 +57,16 @@ const Navigbar = () => {
               <Nav.Item>
                 <Nav.Link href="/#/admin">admin</Nav.Link>
               </Nav.Item>
+            </Nav>
+            <Nav className="mx-auto">
+              <a className="btn btn-full" href="tel: 02 43 89 64 02">
+                <PhoneIcon /> 02 43 89 64 02
+              </a>
+            </Nav>
+            <Nav>
+              <a className="btn btn-full" href="/#/Contact">
+                Avoir son devis
+              </a>
             </Nav>
           </Navbar.Collapse>
         </Container>
