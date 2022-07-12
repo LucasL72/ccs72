@@ -16,7 +16,7 @@ const Carport = () => {
               <img
                 alt="carport"
                 src="./image.webp"
-                className=" img-boder img-fluid d-flex justify-content-center"
+                className=" img-border img-fluid d-flex justify-content-center"
               ></img>
             </Col>
 
@@ -42,6 +42,7 @@ const Carport = () => {
               </p>
             </Col>
           </Row>
+          <h1 className="text-center ssligne mt-5">Récents</h1>
           <Blog />
         </Container>
       </MainLayout>

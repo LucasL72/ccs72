@@ -18,33 +18,31 @@ const Charpente = () => {
               <img
                 alt="carport"
                 src="./image.webp"
-                className=" img-boder img-fluid d-flex justify-content-center"
+                className=" img-border img-fluid d-flex justify-content-center"
               ></img>
             </Col>
 
             <Col md={6}>
               <p className="justif">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Feugiat scelerisque varius morbi enim nunc faucibus a
-                pellentesque sit. Volutpat ac tincidunt vitae semper. Vitae
-                semper quis lectus nulla at volutpat. Elit duis tristique
-                sollicitudin nibh sit amet commodo nulla facilisi. In ornare
-                quam viverra orci sagittis eu volutpat. Risus nullam eget felis
-                eget. Et netus et malesuada fames ac turpis egestas. Egestas
-                fringilla phasellus faucibus scelerisque eleifend donec. Viverra
-                orci sagittis eu volutpat. Sed egestas egestas fringilla
-                phasellus faucibus scelerisque. Tempus egestas sed sed risus
-                pretium. Mattis nunc sed blandit libero. Euismod in pellentesque
-                massa placerat duis ultricies lacus sed. Scelerisque eu ultrices
-                vitae auctor. Massa placerat duis ultricies lacus sed turpis.
-                Elementum nibh tellus molestie nunc. Commodo sed egestas egestas
-                fringilla phasellus faucibus. Tristique magna sit amet purus
-                gravida quis blandit.
+                <b className="gras">Notre métier de charpentier bois :</b> Nous
+                intervenons sur les charpentes traditionnelles et/ou fermette,
+                pour des réparations, renforcement, surélévations, création de
+                lucarnes, transformation de surface de combles non aménagés en
+                combles aménageables, etc... <br></br>
+                <b className="gras">Notre métier de couvreur :</b> Que vous ayez
+                une couverture en ardoise, tuiles plate, tuiles mécaniques,
+                toiture zinc, ou encore toit plat, nous pouvons vous accompagner
+                pour sa réalisation. Entretien: Nous pouvons réaliser le
+                démoussage de votre toiture et effectuer diverses réparations.
+                Vous pouvez nous confiez la pose de femêtre de toit (velux).
+                <br></br> <b className="gras">Notre métier de zingueur :</b>{" "}
+                Pour la réalisation ou l'entretien de vos gouttières, cheneaux,
+                lucarne, etc...
               </p>
             </Col>
           </Row>
         </Container>
+        <h1 className="text-center ssligne mt-5">Récents</h1>
         <Blog />
       </MainLayout>
     </div>

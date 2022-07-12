@@ -16,7 +16,7 @@ const Pergolas = () => {
               <img
                 alt="carport"
                 src="./image.webp"
-                className=" img-boder img-fluid d-flex justify-content-center"
+                className=" img-border img-fluid d-flex justify-content-center"
               ></img>
             </Col>
 
@@ -43,6 +43,7 @@ const Pergolas = () => {
             </Col>
           </Row>
         </Container>
+        <h1 className="text-center ssligne mt-5">Récents</h1>
         <Blog />
       </MainLayout>
     </div>

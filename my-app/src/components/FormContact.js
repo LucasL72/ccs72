@@ -5,7 +5,6 @@ import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
-import Button from "react-bootstrap/Button";
 import EmailIcon from "@mui/icons-material/Email";
 const FormContact = () => {
   return (
@@ -16,10 +15,15 @@ const FormContact = () => {
           <Col md={6}>
             <Row>
               <Col md={8}>
-                <p>
+                <a
+                  href="https://www.google.fr/maps/place/CHARPENTE+COUVERTURE+DE+LA+SARTHE/@48.0262747,0.3587736,18.56z/data=!4m12!1m6!3m5!1s0x47e2f4eeb66c036f:0x8eb4ba45a2bf2d72!2sEntreprise+David!8m2!3d48.0264294!4d0.3596636!3m4!1s0x0:0xc922eef2da4e970c!8m2!3d48.0262394!4d0.3599685"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="linkb"
+                >
                   <AddLocationAltIcon color="success" sx={{ fontSize: 30 }} />{" "}
                   RN23 Le pré de l'étang, 72470 Saint-Mars-la-Brière
-                </p>
+                </a>
               </Col>
               <Col md={4}>
                 <p>
@@ -102,9 +106,9 @@ const FormContact = () => {
                 <Form.Control as="textarea" rows={3} />
               </FloatingLabel>
               <div className="text-center">
-                <Button variant="outline-dark" type="submit">
+                <button className="btn-grad" type="submit">
                   Envoyer
-                </Button>
+                </button>
               </div>
             </Form>
           </Col>

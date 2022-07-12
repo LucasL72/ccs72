@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 $font-1: "Roboto", sans-serif;
-$color-1: rgb(37, 135, 1);
+$color-1: rgb(59, 147, 27);
 $color-2: rgba(242, 133, 0, 1);
 // Base;
 * {
@@ -21,13 +21,29 @@ main {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.Green {
-  background: rgb(37, 135, 1);
+.gras {
+  color: rgb(213, 118, 1);
+}
+/*  VERT & ORANGE
+ background: rgb(59, 147, 27);
   background: linear-gradient(
-    218deg,
-    rgba(37, 135, 1, 1) 79%,
+    210deg,
+    rgb(59, 147, 27) 79%,
     rgba(242, 133, 0, 1) 79%
   );
+ */
+.Green {
+  background: #283048; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #859398,
+    #283048
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #859398,
+    #283048
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 li {
@@ -51,10 +67,10 @@ a.nav-link:hover {
 .ssligne:after {
   display: block;
   height: 4px;
-  background: rgb(37, 135, 1);
+  background: rgb(59, 147, 27);
   background: linear-gradient(
     218deg,
-    rgba(37, 135, 1, 1) 50%,
+    rgb(59, 147, 27) 50%,
     rgba(242, 133, 0, 1) 50%
   );
   width: 100px;
@@ -110,7 +126,7 @@ a.btn {
 
 a.btn-full {
   border: 5px solid;
-  border-color: grey;
+  border-color: $color-2;
   background-color: $color-2;
   color: rgb(255, 255, 255);
   margin-right: 15px;
@@ -118,9 +134,32 @@ a.btn-full {
 
 a.btn-full:hover {
   border: 5px solid;
-  border-color: grey;
+  border-color: $color-2;
   background-color: rgb(255, 255, 255);
   color: $color-2;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border: #ff512f;
+  border-radius: 10px;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 .justif {

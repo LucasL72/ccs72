@@ -8,6 +8,7 @@ const Home = () => {
   return (
     <div>
       <MainLayout>
+      <h1 className="text-center ssligne">Récents</h1>
         <Blog />
         <Events />
         <FormContact />

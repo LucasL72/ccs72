@@ -1,7 +1,7 @@
 .banner1 {
-  background-image: url(../../assets/images/1.webp);
+  background-image: url(../../assets/images/1.jpg);
   background-size: cover;
-  background-position: 100%;
+  background-position: 75% top;
   min-height: 70vh;
   color: #fff;
 }
@@ -27,6 +27,46 @@
   min-height: 70vh;
   color: #fff;
 }
+.banner5 {
+  background-image: url(../../assets/images/5.webp);
+  background-size: cover;
+  background-position: 100%;
+  min-height: 70vh;
+  color: #fff;
+}
+
+.banner6 {
+  background-image: url(../../assets/images/6.webp);
+  background-size: cover;
+  background-position: 100%;
+  min-height: 70vh;
+  color: #fff;
+}
+
+.banner7 {
+  background-image: url(../../assets/images/7.jpg);
+  background-size: cover;
+  background-position: 100%;
+  min-height: 70vh;
+  color: #fff;
+}
+
+.banner8 {
+  background-image: url(../../assets/images/8.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  color: #fff;
+}
+.banner9 {
+  background-image: url(../../assets/images/9.webp);
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  color: #fff;
+}
+
+
 
 .event {
   background-image:linear-gradient(

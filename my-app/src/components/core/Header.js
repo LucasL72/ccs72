@@ -17,6 +17,21 @@ const Header = () => {
         <Carousel.Item>
           <div className="banner4"></div>
         </Carousel.Item>
+        <Carousel.Item>
+          <div className="banner5"></div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className="banner6"></div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className="banner7"></div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className="banner8"></div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className="banner9"></div>
+        </Carousel.Item>
       </Carousel>
     </div>
   );

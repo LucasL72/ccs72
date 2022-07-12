@@ -4,14 +4,19 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { useNavigate } from "react-router-dom";
 
 const Blog = () => {
+  const navigate = useNavigate();
+  const toArticleID = async (id) => {
+    navigate("/Blog/:id" /*+ item.id, { state: { id, item } })*/);
+  };
+
   return (
     <div>
-      <h1 className="text-center ssligne">Récents</h1>
       <Container>
         <Row>
-          <Col md={4}>
+          <Col md={4} className="card-wrapper">
             <Card className="rounded scale mb-3" text="light">
               <Card.Img variant="top" src="./image.webp" />
               <Card.Body>
@@ -20,7 +25,13 @@ const Blog = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </Card.Text>
-                <Button variant="secondary">Go somewhere</Button>
+                <Button
+                  type="button"
+                  onClick={() => toArticleID()}
+                  variant="outline-light"
+                >
+                  Voir plus...
+                </Button>
               </Card.Body>
             </Card>
           </Col>
@@ -33,7 +44,7 @@ const Blog = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </Card.Text>
-                <Button variant="secondary">Go somewhere</Button>
+                <Button variant="outline-light">Voir plus...</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -46,7 +57,7 @@ const Blog = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </Card.Text>
-                <Button variant="secondary">Go somewhere</Button>
+                <Button variant="outline-light">Voir plus...</Button>
               </Card.Body>
             </Card>
           </Col>

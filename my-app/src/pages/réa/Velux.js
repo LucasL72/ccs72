@@ -15,13 +15,13 @@ const Velux = () => {
             <Col md={6} className="d-flex justify-content-center">
               <img
                 alt="carport"
-                src="./image.webp"
-                className=" img-boder img-fluid d-flex justify-content-center"
+                src="./images/9.webp"
+                className=" img-border img-fluid d-flex justify-content-center"
               ></img>
             </Col>
 
             <Col md={6}>
-              <p className="justif">
+              <p className="justif ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Feugiat scelerisque varius morbi enim nunc faucibus a
@@ -43,6 +43,7 @@ const Velux = () => {
             </Col>
           </Row>
         </Container>
+        <h1 className="text-center ssligne mt-5">Récents</h1>
         <Blog />
       </MainLayout>
     </div>
