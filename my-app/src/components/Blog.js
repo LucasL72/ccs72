@@ -5,13 +5,14 @@ import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
+import ModalDeleteArt from "./Modals/ModalDeleteArt";
 
 const Blog = () => {
   const navigate = useNavigate();
   const toArticleID = async (id) => {
     navigate("/Blog/:id" /*+ item.id, { state: { id, item } })*/);
   };
-
+  const [modalDelShow, setModalDelShow] = React.useState(false);
   return (
     <div>
       <Container>
@@ -31,7 +32,18 @@ const Blog = () => {
                   variant="outline-light"
                 >
                   Voir plus...
+                </Button>{" "}
+                <Button
+                  variant="danger"
+                  onClick={() => setModalDelShow(true)}
+                  className="mx-auto"
+                >
+                  Supprimer
                 </Button>
+                <ModalDeleteArt
+                  show={modalDelShow}
+                  onHide={() => setModalDelShow(false)}
+                />
               </Card.Body>
             </Card>
           </Col>
@@ -45,6 +57,7 @@ const Blog = () => {
                   the bulk of the card's content.
                 </Card.Text>
                 <Button variant="outline-light">Voir plus...</Button>
+                <Button variant="danger">Supprimer</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -57,7 +70,8 @@ const Blog = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </Card.Text>
-                <Button variant="outline-light">Voir plus...</Button>
+                <Button variant="outline-light">Voir plus...</Button>{" "}
+                <Button variant="danger">Supprimer</Button>
               </Card.Body>
             </Card>
           </Col>

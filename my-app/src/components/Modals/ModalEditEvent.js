@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 
-const ModalCreateEvent = (props) => {
+const ModalEditEvent = (props) => {
   const [Description, setDescription] = useState("");
   const handleChangeDesc = (e) => {
     // Here we are checking if the length is equal to 255
@@ -18,7 +18,7 @@ const ModalCreateEvent = (props) => {
     <div>
       <Modal {...props} size="md" aria-labelledby="ModalCreate" centered>
         <Modal.Header closeButton>
-          <Modal.Title id="ModalCreate">Ajouter un évènement {""}</Modal.Title>
+          <Modal.Title id="ModalCreate">Editer l'évènement {""}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
@@ -75,4 +75,4 @@ const ModalCreateEvent = (props) => {
   );
 };
 
-export default ModalCreateEvent;
+export default ModalEditEvent;

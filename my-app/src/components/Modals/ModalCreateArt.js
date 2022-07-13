@@ -6,6 +6,14 @@ import Modal from "react-bootstrap/Modal";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 
 const ModalCreateArt = (props) => {
+  const [Description, setDescription] = useState("");
+  const handleChangeDesc = (e) => {
+    // Here we are checking if the length is equal to 255
+    if (e.target.value.length === 255) {
+      window.alert("la description de doit pas dépasser 255 charactères ! ");
+    }
+    setDescription(e.target.value);
+  };
   return (
     <div>
       <Modal {...props} size="md" aria-labelledby="ModalCreate" centered>
@@ -48,7 +56,14 @@ const ModalCreateArt = (props) => {
             </Col>
             <Col sm={12}>
               <FloatingLabel controlId="floatingInputDesc" label="Description">
-                <Form.Control as="textarea" rows={4} className="mb-3" />
+                <Form.Control
+                  as="textarea"
+                  rows={4}
+                  className="mb-3"
+                  maxLength={255}
+                  value={Description}
+                  onChange={handleChangeDesc}
+                />
               </FloatingLabel>
             </Col>
             <Col sm={12}>

@@ -4,8 +4,11 @@ import Container from "react-bootstrap/Container";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import PhoneIcon from "@mui/icons-material/Phone";
 import React from "react";
-
+import ModalCon from "../Modals/ModalCon";
+import Button from "react-bootstrap/Button";
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
 const Navigbar = () => {
+  const [modalconShow, setModalconShow] = React.useState(false);
   return (
     <>
       <Navbar
@@ -64,12 +67,23 @@ const Navigbar = () => {
             <Nav className="mx-auto">
               <a className="btn btn-full" href="tel: 02 43 89 64 02">
                 <PhoneIcon /> 02 43 89 64 02
-              </a>
+              </a>{" "}
             </Nav>
             <Nav>
               <a className="btn btn-full" href="/#/Devis">
                 Avoir son devis
               </a>
+              <Button
+                variant="outline-light"
+                onClick={() => setModalconShow(true)}
+              >
+                {" "}
+                <AccountBoxIcon sx={{ fontSize: 30 }} />{" "}
+              </Button>
+              <ModalCon
+                show={modalconShow}
+                onHide={() => setModalconShow(false)}
+              />
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -103,7 +103,11 @@ const FormContact = () => {
                 label="Votre message"
                 className="mb-3"
               >
-                <Form.Control as="textarea" rows={3} />
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+  
+                />
               </FloatingLabel>
               <div className="text-center">
                 <button className="btn-grad" type="submit">

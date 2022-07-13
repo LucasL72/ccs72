@@ -1,8 +1,9 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
-
+import ModalDeleteMess from "../Modals/ModalDeleteMess";
 const GestMess = () => {
+  const [modalDelShow, setModalDelShow] = React.useState(false);
   return (
     <div>
       <Table striped bordered hover variant="success" responsive>
@@ -36,11 +37,17 @@ const GestMess = () => {
               </a>
             </td>
             <td>#</td>
-            <td>#</td>
             <td>
-              <a href="/">
+              <p className="justif text-break">#</p>
+            </td>
+            <td>
+              <a onClick={() => setModalDelShow(true)}>
                 <DeleteForeverIcon />
               </a>
+              <ModalDeleteMess
+                show={modalDelShow}
+                onHide={() => setModalDelShow(false)}
+              />
             </td>
           </tr>
         </tbody>

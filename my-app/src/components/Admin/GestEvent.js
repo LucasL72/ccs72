@@ -6,9 +6,13 @@ import DangerousIcon from "@mui/icons-material/Dangerous";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import ModalCreateEvent from "../Modals/ModalCreateEvent";
+import ModalEditEvent from "../Modals/ModalEditEvent";
+import ModalDeleteEvent from "../Modals/ModalDeleteEvent";
 
 const GestEvent = () => {
   const [modalCreateShow, setModalCreateShow] = React.useState(false);
+  const [modalEditEventShow, setModalEditEventShow] = React.useState(false);
+  const [modalDelShow, setModalDelShow] = React.useState(false);
   return (
     <div>
       <Container className="mt-3">
@@ -44,12 +48,20 @@ const GestEvent = () => {
               <td>#</td>
               <td>#</td>
               <td>
-                <a href="/">
+                <a onClick={() => setModalEditEventShow(true)}>
                   <EditIcon sx={{ fontSize: 25 }} />
                 </a>{" "}
-                <a href="/">
+                <a onClick={() => setModalDelShow(true)}>
                   <DangerousIcon sx={{ fontSize: 25 }} color="danger" />
                 </a>
+                <ModalEditEvent
+                  show={modalEditEventShow}
+                  onHide={() => setModalEditEventShow(false)}
+                />
+                <ModalDeleteEvent
+                  show={modalDelShow}
+                  onHide={() => setModalDelShow(false)}
+                />
               </td>
             </tr>
           </tbody>
