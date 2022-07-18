@@ -39,7 +39,7 @@ class Server {
     );
 
     // Express static permet de diriger un chemin sur un dossier en particulier
-    this.app.use("/api/assets", express.static("Public"));
+    this.app.use("/api/assets", express.static("public"));
     // Routes
     this.app.use(router);
     // Run app
