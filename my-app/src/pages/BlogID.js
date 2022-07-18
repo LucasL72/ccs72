@@ -3,41 +3,48 @@ import MainLayout from "../layouts/MainLayout";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import { urlImgArt } from "../utils/url";
+import Moment from "react-moment";
+import "moment-timezone";
+import "moment/locale/fr";
+import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const BlogID = () => {
+  const { state } = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!state) navigate("/Blog");
+  }, [navigate, state]);
+
   return (
     <div>
       <MainLayout>
         <Container>
-          <h1 className="text-center ssligne">Titre</h1>
+          <h1 className="text-center ssligne">{state && state.item.title}</h1>
           <Row>
             <Col md={12} className="d-flex justify-content-center mb-4">
               <img
-                alt="carport"
-                src="./image.webp"
+                src={`${urlImgArt + state.item.imgarticle}`}
+                alt={state && state.item.title}
+                width="700"
+                height="550"
                 className=" img-boder img-fluid d-flex justify-content-center"
               ></img>
             </Col>
 
             <Col md={12}>
-              <p className="justif">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Feugiat scelerisque varius morbi enim nunc faucibus a
-                pellentesque sit. Volutpat ac tincidunt vitae semper. Vitae
-                semper quis lectus nulla at volutpat. Elit duis tristique
-                sollicitudin nibh sit amet commodo nulla facilisi. In ornare
-                quam viverra orci sagittis eu volutpat. Risus nullam eget felis
-                eget. Et netus et malesuada fames ac turpis egestas. Egestas
-                fringilla phasellus faucibus scelerisque eleifend donec. Viverra
-                orci sagittis eu volutpat. Sed egestas egestas fringilla
-                phasellus faucibus scelerisque. Tempus egestas sed sed risus
-                pretium. Mattis nunc sed blandit libero. Euismod in pellentesque
-                massa placerat duis ultricies lacus sed. Scelerisque eu ultrices
-                vitae auctor. Massa placerat duis ultricies lacus sed turpis.
-                Elementum nibh tellus molestie nunc. Commodo sed egestas egestas
-                fringilla phasellus faucibus. Tristique magna sit amet purus
-                gravida quis blandit.
+              <p className="justif">{state && state.item.contenu}</p>
+              <p className="justif text-muted">
+                Publié par {state && state.item.auteur} le{" "}
+                <Moment
+                  locale="fr"
+                  tz="Europe/Paris"
+                  format="DD MMMM YYYY à HH:mm"
+                >
+                  {state && state.item.dateart}
+                </Moment>{" "}
               </p>
             </Col>
           </Row>

@@ -4,16 +4,30 @@ import Col from "react-bootstrap/Col";
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
+import { useDispatch } from "react-redux";
+import { createEvent, getEvent } from "../../store/actions/EventActions";
 
 const ModalCreateEvent = (props) => {
-  const [Description, setDescription] = useState("");
-  const handleChangeDesc = (e) => {
-    // Here we are checking if the length is equal to 255
-    if (e.target.value.length === 255) {
-      window.alert("la description de doit pas dépasser 255 charactères ! ");
+  const [date, setDate] = useState("");
+  const [heure, setHeure] = useState("");
+  const [content, setContent] = useState("");
+  const [title, setTitle] = useState("");
+  const dispatch = useDispatch();
+
+  const handleForm = async (e) => {
+    e.preventDefault();
+    if (title && content && date && heure) {
+      dispatch(createEvent({ title, content, date, heure }));
+      setTitle("");
+      setContent("");
+      setDate("");
+      setHeure("");
+      dispatch(getEvent());
+      window.alert("Evenement ajouté !");
+      window.location.reload();
     }
-    setDescription(e.target.value);
   };
+
   return (
     <div>
       <Modal {...props} size="md" aria-labelledby="ModalCreate" centered>
@@ -21,10 +35,16 @@ const ModalCreateEvent = (props) => {
           <Modal.Title id="ModalCreate">Ajouter un évènement {""}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
+          <Form onSubmit={(e) => handleForm(e)}>
             <Col sm={12}>
               <FloatingLabel controlId="floatingInputTitle" label="Date">
-                <Form.Control type="date" placeholder="Date" className="mb-3" />
+                <Form.Control
+                  type="date"
+                  placeholder="Date"
+                  className="mb-3"
+                  value={date}
+                  onChange={(e) => setDate(e.target.value)}
+                />
               </FloatingLabel>
             </Col>
             <Col sm={12}>
@@ -33,6 +53,8 @@ const ModalCreateEvent = (props) => {
                   type="time"
                   placeholder="Heure"
                   className="mb-3"
+                  value={heure}
+                  onChange={(e) => setHeure(e.target.value)}
                 />
               </FloatingLabel>
             </Col>
@@ -42,18 +64,24 @@ const ModalCreateEvent = (props) => {
                   type="text"
                   placeholder="Titre"
                   className="mb-3"
+                  value={title}
+                  maxLength={255}
+                  onChange={(e) => setTitle(e.target.value)}
                 />
               </FloatingLabel>
             </Col>
             <Col sm={12}>
-              <FloatingLabel controlId="floatingInputDesc" label="Description">
+              <FloatingLabel
+                controlId="floatingInputDesc"
+                label="Descriptionn (limité à 250 caractères)"
+              >
                 <Form.Control
                   as="textarea"
                   rows={2}
                   className="mb-3"
                   maxLength={255}
-                  value={Description}
-                  onChange={handleChangeDesc}
+                  value={content}
+                  onChange={(e) => setContent(e.target.value)}
                 />
               </FloatingLabel>
             </Col>

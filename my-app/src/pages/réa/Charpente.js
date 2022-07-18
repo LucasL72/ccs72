@@ -3,9 +3,17 @@ import MainLayout from "../../layouts/MainLayout";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Blog from "../../components/Blog";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import ListBlog from "../../components/Admin/Blog/ListBlog";
+import { getNews } from "../../store/actions/ArticlesActions";
 
 const Charpente = () => {
+  const dispatch = useDispatch();
+  const listArticles = useSelector((state) => state.articles.listArticles);
+  useEffect(() => {
+    dispatch(getNews());
+  }, []);
   return (
     <div>
       <MainLayout>
@@ -43,7 +51,7 @@ const Charpente = () => {
           </Row>
         </Container>
         <h1 className="text-center ssligne mt-5">Récents</h1>
-        <Blog />
+        <ListBlog list={listArticles} />
       </MainLayout>
     </div>
   );

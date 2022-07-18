@@ -1,18 +1,20 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import Carou from "./Admin/Events/Carou";
 
-const Events = () => {
+const Events = (props) => {
+  const { list } = props;
   return (
-    <Carousel>
-      <Carousel.Item>
-        <div className="event"> </div>
-        <Carousel.Caption>
-          <h3 className="text-center ssligne">Prochains évènements</h3>
-          <p>Date</p>
-          <p>titre</p>
-          <p>petite description</p>
-        </Carousel.Caption>
-      </Carousel.Item>
+    <Carousel fade>
+      {list.length > 0 &&
+        list.map((item) => {
+          return (
+            <Carousel.Item interal={10000}>
+              <div className="event"> </div>
+              <Carou item={item} />;
+            </Carousel.Item>
+          );
+        })}
     </Carousel>
   );
 };

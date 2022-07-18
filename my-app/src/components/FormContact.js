@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -6,7 +6,46 @@ import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 import EmailIcon from "@mui/icons-material/Email";
+import { useDispatch } from "react-redux";
+import { createMessage, getMessage } from "../store/actions/MessActions";
+
 const FormContact = () => {
+  const [produit, setProduit] = useState("");
+  const [nom, setNom] = useState("");
+  const [prenom, setPrenom] = useState("");
+  const [email, setEmail] = useState("");
+  const [tel, setTel] = useState("");
+  const [adresse, setAdresse] = useState("");
+  const [content, setContent] = useState("");
+  const dispatch = useDispatch();
+
+  const handleForm = async (e) => {
+    e.preventDefault();
+
+    if (produit && nom && prenom && email && tel && adresse && content) {
+      dispatch(
+        createMessage({
+          produit,
+          nom,
+          prenom,
+          email,
+          tel,
+          adresse,
+          content,
+        })
+      );
+      setProduit("");
+      setNom("");
+      setPrenom("");
+      setEmail("");
+      setTel("");
+      setAdresse("");
+      setContent("");
+      dispatch(getMessage());
+      window.alert("Message envoyé ! ");
+    }
+  };
+
   return (
     <div>
       <h2 className="text-center ssligne mt-5">Nous contacter</h2>
@@ -40,18 +79,26 @@ const FormContact = () => {
                 </p>
               </Col>
             </Row>
-            <Form>
+            <Form onSubmit={(e) => handleForm(e)}>
               <FloatingLabel
                 controlId="selectproduuits"
                 label="Choisissez le produit"
                 className="mb-3"
               >
-                <Form.Select aria-label="Nos Réalisations">
+                <Form.Select
+                  aria-label="Nos Réalisations"
+                  value={produit}
+                  onChange={(e) => setProduit(e.target.value)}
+                >
                   <option></option>
                   <option>Carport Bois</option>
                   <option>Charpente /Couvertures / Zingueries</option>
                   <option>Pergolas Bois</option>
                   <option>Velux</option>
+                  <option disabled>
+                    --------------------------
+                  </option>
+                  <option>Envoyer un message</option>
                 </Form.Select>
               </FloatingLabel>
               <Row>
@@ -61,7 +108,12 @@ const FormContact = () => {
                     label="Votre nom"
                     className="mb-3"
                   >
-                    <Form.Control type="text" placeholder="Votre nom" />
+                    <Form.Control
+                      type="text"
+                      placeholder="Votre nom"
+                      value={nom}
+                      onChange={(e) => setNom(e.target.value)}
+                    />
                   </FloatingLabel>
                 </Col>
                 <Col md={6}>
@@ -70,7 +122,12 @@ const FormContact = () => {
                     label="Votre prénom"
                     className="mb-3"
                   >
-                    <Form.Control type="text" placeholder="Votre prénom" />
+                    <Form.Control
+                      type="text"
+                      placeholder="Votre prénom"
+                      value={prenom}
+                      onChange={(e) => setPrenom(e.target.value)}
+                    />
                   </FloatingLabel>
                 </Col>
               </Row>
@@ -79,7 +136,12 @@ const FormContact = () => {
                 label="Votre Email"
                 className="mb-3"
               >
-                <Form.Control type="email" placeholder="Votre Email" />
+                <Form.Control
+                  type="email"
+                  placeholder="Votre Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
               </FloatingLabel>
               <FloatingLabel
                 controlId="phone"
@@ -89,6 +151,8 @@ const FormContact = () => {
                 <Form.Control
                   type="phone"
                   placeholder="Votre n° de téléphone"
+                  value={tel}
+                  onChange={(e) => setTel(e.target.value)}
                 />
               </FloatingLabel>
               <FloatingLabel
@@ -96,7 +160,12 @@ const FormContact = () => {
                 label="Votre adresse"
                 className="mb-3"
               >
-                <Form.Control type="text" placeholder="Votre adresse" />
+                <Form.Control
+                  type="text"
+                  placeholder="Votre adresse"
+                  value={adresse}
+                  onChange={(e) => setAdresse(e.target.value)}
+                />
               </FloatingLabel>
               <FloatingLabel
                 controlId="floatingInput2"
@@ -106,7 +175,8 @@ const FormContact = () => {
                 <Form.Control
                   as="textarea"
                   rows={3}
-  
+                  value={content}
+                  onChange={(e) => setContent(e.target.value)}
                 />
               </FloatingLabel>
               <div className="text-center">

@@ -5,7 +5,16 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Events from "../components/Events";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { getEvent } from "../store/actions/EventActions";
+
 const Contact = () => {
+  const dispatch = useDispatch();
+  const listEvents = useSelector((state) => state.events.listEvents);
+  useEffect(() => {
+    dispatch(getEvent());
+  }, []);
   return (
     <div>
       <MainLayout>
@@ -101,7 +110,7 @@ const Contact = () => {
             </Row>
           </Container>
         </div>
-        <Events />
+        <Events list={listEvents} />
         <FormContact />
       </MainLayout>
     </div>
