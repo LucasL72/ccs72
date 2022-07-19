@@ -45,6 +45,22 @@ const Devis = () => {
       window.alert("Message envoyé ! ");
     }
   };
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 75;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal);
   return (
     <div>
       <MainLayout>
@@ -54,108 +70,110 @@ const Devis = () => {
             <RequestPageIcon sx={{ fontSize: 50 }} />
             Demande de Devis
           </h1>
-          <Form onSubmit={(e) => handleForm(e)}>
-            <FloatingLabel
-              controlId="selectproduuits"
-              label="Choisissez le produit"
-              className="mb-3"
-            >
-              <Form.Select
-                aria-label="Nos Réalisations"
-                value={produit}
-                onChange={(e) => setProduit(e.target.value)}
+          <div className="reveal">
+            <Form onSubmit={(e) => handleForm(e)}>
+              <FloatingLabel
+                controlId="selectproduuits"
+                label="Choisissez le produit"
+                className="mb-3"
               >
-                <option></option>
-                <option>Carport Bois</option>
-                <option>Charpente /Couvertures / Zingueries</option>
-                <option>Pergolas Bois</option>
-                <option>Velux</option>
-              </Form.Select>
-            </FloatingLabel>
-            <Row>
-              <Col md={6}>
-                <FloatingLabel
-                  controlId="name"
-                  label="Votre nom"
-                  className="mb-3"
+                <Form.Select
+                  aria-label="Nos Réalisations"
+                  value={produit}
+                  onChange={(e) => setProduit(e.target.value)}
                 >
-                  <Form.Control
-                    type="text"
-                    placeholder="Votre nom"
-                    value={nom}
-                    onChange={(e) => setNom(e.target.value)}
-                  />
-                </FloatingLabel>
-              </Col>
-              <Col md={6}>
-                <FloatingLabel
-                  controlId="name"
-                  label="Votre prénom"
-                  className="mb-3"
-                >
-                  <Form.Control
-                    type="text"
-                    placeholder="Votre prénom"
-                    value={prenom}
-                    onChange={(e) => setPrenom(e.target.value)}
-                  />
-                </FloatingLabel>
-              </Col>
-            </Row>
-            <FloatingLabel
-              controlId="email"
-              label="Votre Email"
-              className="mb-3"
-            >
-              <Form.Control
-                type="email"
-                placeholder="Votre Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </FloatingLabel>
-            <FloatingLabel
-              controlId="phone"
-              label="Votre n° de téléphone"
-              className="mb-3"
-            >
-              <Form.Control
-                type="phone"
-                placeholder="Votre n° de téléphone"
-                value={tel}
-                onChange={(e) => setTel(e.target.value)}
-              />
-            </FloatingLabel>
-            <FloatingLabel
-              controlId="adresse"
-              label="Votre adresse"
-              className="mb-3"
-            >
-              <Form.Control
-                type="text"
-                placeholder="Votre adresse"
-                value={adresse}
-                onChange={(e) => setAdresse(e.target.value)}
-              />
-            </FloatingLabel>
-            <FloatingLabel
-              controlId="floatingInput2"
-              label="Votre message"
-              className="mb-3"
-            >
-              <Form.Control
-                as="textarea"
-                rows={3}
-                value={content}
-                onChange={(e) => setContent(e.target.value)}
-              />
-            </FloatingLabel>
-            <div className="text-center">
-              <button className="btn-grad mb-4" type="submit">
-                Envoyer
-              </button>
-            </div>
-          </Form>
+                  <option></option>
+                  <option>Carport Bois</option>
+                  <option>Charpente /Couvertures / Zingueries</option>
+                  <option>Pergolas Bois</option>
+                  <option>Velux</option>
+                </Form.Select>
+              </FloatingLabel>
+              <Row>
+                <Col md={6}>
+                  <FloatingLabel
+                    controlId="name"
+                    label="Votre nom"
+                    className="mb-3"
+                  >
+                    <Form.Control
+                      type="text"
+                      placeholder="Votre nom"
+                      value={nom}
+                      onChange={(e) => setNom(e.target.value)}
+                    />
+                  </FloatingLabel>
+                </Col>
+                <Col md={6}>
+                  <FloatingLabel
+                    controlId="name"
+                    label="Votre prénom"
+                    className="mb-3"
+                  >
+                    <Form.Control
+                      type="text"
+                      placeholder="Votre prénom"
+                      value={prenom}
+                      onChange={(e) => setPrenom(e.target.value)}
+                    />
+                  </FloatingLabel>
+                </Col>
+              </Row>
+              <FloatingLabel
+                controlId="email"
+                label="Votre Email"
+                className="mb-3"
+              >
+                <Form.Control
+                  type="email"
+                  placeholder="Votre Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </FloatingLabel>
+              <FloatingLabel
+                controlId="phone"
+                label="Votre n° de téléphone"
+                className="mb-3"
+              >
+                <Form.Control
+                  type="phone"
+                  placeholder="Votre n° de téléphone"
+                  value={tel}
+                  onChange={(e) => setTel(e.target.value)}
+                />
+              </FloatingLabel>
+              <FloatingLabel
+                controlId="adresse"
+                label="Votre adresse"
+                className="mb-3"
+              >
+                <Form.Control
+                  type="text"
+                  placeholder="Votre adresse"
+                  value={adresse}
+                  onChange={(e) => setAdresse(e.target.value)}
+                />
+              </FloatingLabel>
+              <FloatingLabel
+                controlId="floatingInput2"
+                label="Votre message"
+                className="mb-3"
+              >
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+                  value={content}
+                  onChange={(e) => setContent(e.target.value)}
+                />
+              </FloatingLabel>
+              <div className="text-center">
+                <button className="btn-grad mb-4" type="submit">
+                  Envoyer
+                </button>
+              </div>
+            </Form>
+          </div>
         </Container>
       </MainLayout>
     </div>

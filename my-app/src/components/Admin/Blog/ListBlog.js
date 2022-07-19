@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 
 const ListBlog = (props) => {
   const { list } = props;
+
   return (
     <div className="mt-3">
       <Container>

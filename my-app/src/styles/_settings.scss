@@ -97,6 +97,7 @@ a.nav-link:hover {
 .scale:hover {
   transform: scale(1.06);
   transition: all 0.5s;
+  transition-timing-function: ease-out;
 }
 .linkb {
   color: black;
@@ -157,4 +158,16 @@ a.nav-link:hover {
 }
 .img-border {
   border-radius: 10px;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.8s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
