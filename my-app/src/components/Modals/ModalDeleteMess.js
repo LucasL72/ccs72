@@ -9,6 +9,7 @@ const ModalDeleteMess = (props) => {
   const dispatch = useDispatch();
   const handleDelete = async (id) => {
     dispatch(deleteMessage(id));
+    window.location.reload();
   };
   return (
     <div>

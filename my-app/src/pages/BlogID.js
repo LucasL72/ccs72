@@ -22,7 +22,7 @@ const BlogID = () => {
     <div>
       <MainLayout>
         <Container>
-          <h1 className="text-center ssligne">{state && state.item.title}</h1>
+          <h1 className="text-center ssligne text-break">{state && state.item.title}</h1>
           <Row>
             <Col md={12} className="d-flex justify-content-center mb-4">
               <img
@@ -36,7 +36,7 @@ const BlogID = () => {
 
             <Col md={12}>
               <p className="justif">{state && state.item.contenu}</p>
-              <p className="justif text-muted">
+              <p className="justif text-light">
                 Publié par {state && state.item.auteur} le{" "}
                 <Moment
                   locale="fr"

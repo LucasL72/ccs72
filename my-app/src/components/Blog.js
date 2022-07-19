@@ -13,15 +13,15 @@ const Blog = (props) => {
   const { item } = props;
   const navigate = useNavigate();
   const toArticleID = async (id) => {
-    navigate("/Blog/:id" /*+ item.id, { state: { id, item } })*/);
+    navigate("/Blog/" + item.id, { state: { id, item } });
   };
   const [modalDelShow, setModalDelShow] = React.useState(false);
   return (
-    <div>
-      <Col md={4} className="card-wrapper">
+    <>
+      <Col md={4} className="mb-2">
         <Card
           border="success"
-          className="rounded scale mb-3"
+          className="rounded scale"
           text="light"
           key={item.id}
         >
@@ -31,10 +31,10 @@ const Blog = (props) => {
             alt={item.title}
           />
           <Card.Body>
-            <Card.Title>
+            <Card.Title className="text-center ssligne">
               <strong>{item.title}</strong>
             </Card.Title>
-            <Card.Text>{item.description}</Card.Text>
+            <Card.Text className="justif">{item.description}</Card.Text>
             <Card.Footer>
               <Button
                 type="button"
@@ -53,8 +53,9 @@ const Blog = (props) => {
               <ModalDeleteArt
                 show={modalDelShow}
                 onHide={() => setModalDelShow(false)}
+                item={item}
               />
-              <p className="text-muted">
+              <p className="text-light">
                 {" "}
                 Posté le{" "}
                 <Moment
@@ -69,7 +70,7 @@ const Blog = (props) => {
           </Card.Body>
         </Card>
       </Col>
-    </div>
+    </>
   );
 };
 export default Blog;

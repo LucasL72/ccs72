@@ -116,28 +116,7 @@ a.nav-link:hover {
   text-decoration: none;
 }
 
-a.btn {
-  display: inline-block;
-  padding: 10px;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: background-color 1s, color 1s, border 1s;
-}
 
-a.btn-full {
-  border: 5px solid;
-  border-color: $color-2;
-  background-color: $color-2;
-  color: rgb(255, 255, 255);
-  margin-right: 15px;
-}
-
-a.btn-full:hover {
-  border: 5px solid;
-  border-color: $color-2;
-  background-color: rgb(255, 255, 255);
-  color: $color-2;
-}
 
 .btn-grad {
   background-image: linear-gradient(
@@ -153,7 +132,17 @@ a.btn-full:hover {
   background-size: 200% auto;
   color: white;
   border: #ff512f;
-  border-radius: 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: all .5s;
+  transition-timing-function: cubic-bezier(.2, 3, .4, 1);
+  &:hover{
+    transform: scale(1.1, 1.1);
+  }
+  
+  &:active{
+    transform: scale(1.05, 1.05);
+  }
 }
 
 .btn-grad:hover {

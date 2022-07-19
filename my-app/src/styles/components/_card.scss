@@ -1,14 +1,18 @@
 .card {
   border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background: rgb(176, 176, 176);
+  background: #283048; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #859398,
+    #283048
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    219deg,
-    rgba(176, 176, 176, 1) 23%,
-    rgba(25, 144, 35, 1) 23%,
-    rgba(0, 139, 12, 1) 73%,
-    rgba(233, 103, 46, 1) 73%
-  );
+    to right,
+    #859398,
+    #283048
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 @keyframes wipe-enter {
@@ -23,6 +27,6 @@
   .card {
     animation-name: wipe-enter;
     animation-duration: 1s;
-    animation-iteration-count:initial;
+    animation-iteration-count: initial;
   }
 }

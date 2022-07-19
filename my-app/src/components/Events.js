@@ -5,7 +5,7 @@ import Carou from "./Admin/Events/Carou";
 const Events = (props) => {
   const { list } = props;
   return (
-    <Carousel fade>
+    <Carousel fade className="mt-4">
       {list.length > 0 &&
         list.map((item) => {
           return (

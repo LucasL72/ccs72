@@ -105,6 +105,7 @@ const ModalCreateArt = (props) => {
                   type="text"
                   placeholder="Titre"
                   className="mb-3"
+                  maxLength={100}
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
                 />
@@ -139,6 +140,7 @@ const ModalCreateArt = (props) => {
                   type="text"
                   placeholder="Auteur"
                   className="mb-3"
+                  maxLength={100}
                   value={auteur}
                   onChange={(e) => setAuteur(e.target.value)}
                 />
