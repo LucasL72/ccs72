@@ -48,7 +48,6 @@ class Event {
   }
 
   create() {
-    console.log("model create", this);
     const { title,content,date,heure} = this;
     return new Promise((resolve, reject) => {
       connection.getConnection(function (error, conn) {

@@ -11,7 +11,7 @@ module.exports = (req, res, next) => {
                 //ratio
                 fit: sharp.fit.contain,
                 width: 600,
-                height: 400,
+                height: 500,
                 position: "centre",
                 background: {
                     r: 255,

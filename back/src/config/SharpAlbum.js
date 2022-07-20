@@ -10,8 +10,7 @@ module.exports = (req, res, next) => {
             .resize({
                 //ratio
                 fit: sharp.fit.contain,
-                width: 600,
-                height: 400,
+                height: 500,
                 position: "centre",
                 background: {
                     r: 255,
@@ -21,7 +20,7 @@ module.exports = (req, res, next) => {
                 }
             })
             .webp({
-                quality: 80
+                quality: 90
             })
             .toFile(pathSharp + file.filename.split('.').slice(0, -1).join('.') + ".webp", (err, info) => { })
         next()
