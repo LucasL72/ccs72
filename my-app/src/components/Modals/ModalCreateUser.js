@@ -6,8 +6,27 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
+import { useDispatch } from "react-redux";
+import { createUser} from "../../store/actions/UsersActions";
+
 
 const ModalCreateUser = (props) => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirm, setConfirm] = useState("");
+  const dispatch = useDispatch();
+
+  const handleForm = async (e) => {
+    e.preventDefault();
+    if (email && password === confirm) {
+      dispatch(createUser({email,password,confirm}));
+      setEmail("");
+      setPassword("");
+      setConfirm("");
+      window.alert("Compte créé !");
+    }
+  };
+
   return (
     <div>
       <Modal {...props} size="md" aria-labelledby="ModalConn" centered>
@@ -19,15 +38,16 @@ const ModalCreateUser = (props) => {
         <Modal.Body>
           <Container>
             <Row>
-              <Form>
+              <Form onSubmit={(e) => handleForm(e)}>
                 <Col md={12}>
                   {" "}
                   <FloatingLabel controlId="floatingInput" label="Votre Email">
                     <Form.Control
                       type="email"
                       placeholder="Votre Email"
-                      //value={email}
-                      //onChange={(e) => setEmail(e.target.value)}
+                      value={email}
+                      maxlenght={50}
+                      onChange={(e) => setEmail(e.target.value)}
                       required
                     />
                   </FloatingLabel>
@@ -42,8 +62,8 @@ const ModalCreateUser = (props) => {
                       <Form.Control
                         type="password"
                         placeholder="Votre Mot de Passe"
-                        //value={password}
-                        //onChange={(e) => setPassword(e.target.value)}
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                       />
                     </FloatingLabel>
                   </Col>
@@ -56,8 +76,8 @@ const ModalCreateUser = (props) => {
                       <Form.Control
                         type="password"
                         placeholder="Confirmer Mot de Passe"
-                        //value={password}
-                        //onChange={(e) => setPassword(e.target.value)}
+                        value={confirm}
+                        onChange={(e) => setConfirm(e.target.value)}
                       />
                     </FloatingLabel>
                   </Col>

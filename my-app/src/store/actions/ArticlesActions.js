@@ -9,6 +9,7 @@ import { api } from "../../config/axios";
 import {
   POST_ARTICLE,
   GET_ARTICLE,
+  GETID_ARTICLE,
   DELETE_ARTICLE,
   GET_ARTNEWS,
 } from "./ActionTypes";
@@ -46,7 +47,7 @@ export const getArticleID = (id) => {
     return api
       .get(`/Blog/${id}`)
       .then((res) => {
-        dispatch({ type: GET_ARTICLE, payload: res.data });
+        dispatch({ type: GETID_ARTICLE, payload: res.data });
       })
       .catch((err) => console.log(err));
   };

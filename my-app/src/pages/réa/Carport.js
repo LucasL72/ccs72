@@ -34,7 +34,7 @@ const Carport = () => {
     <div>
       <MainLayout>
         <Container>
-          <h1 className="text-center ssligne">Carport</h1>
+          <h1 className="text-center ssligne">Carport Bois</h1>
           <div className="reveal">
             <Row>
               <Col md={6} className="d-flex justify-content-center">

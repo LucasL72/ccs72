@@ -7,23 +7,27 @@ import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import ModalCreateUser from "../Modals/ModalCreateUser";
+import { useDispatch } from "react-redux";
+import { login, check } from "../../store/actions/UsersActions";
+import { useNavigate } from "react-router";
+
 const ModalCon = (props) => {
-  /*const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const dispatch = useDispatch();
-    const navigate = useNavigate();
-  
-    // ici la fonction est asynchrone
-    const handleForm = async (e) => {
-      e.preventDefault();
-      if (email && password) {
-        await dispatch(login({ email, password }));
-        setEmail("");
-        setPassword("");
-        dispatch(check());
-        navigate("/Profil");
-      }
-    };*/
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
+
+  // ici la fonction est asynchrone
+  const handleForm = async (e) => {
+    e.preventDefault();
+    if (email && password) {
+      await dispatch(login({ email, password }));
+      setEmail("");
+      setPassword("");
+      dispatch(check());
+      navigate("/");
+    }
+  };
   const [modalCreateShow, setModalCreateShow] = React.useState(false);
   return (
     <div>
@@ -36,15 +40,15 @@ const ModalCon = (props) => {
         <Modal.Body>
           <Container>
             <Row>
-              <Form>
+              <Form onSubmit={(e) => handleForm(e)}>
                 <Col md={12}>
                   {" "}
                   <FloatingLabel controlId="floatingInput" label="Votre Email">
                     <Form.Control
                       type="email"
                       placeholder="Votre Email"
-                      //value={email}
-                      //onChange={(e) => setEmail(e.target.value)}
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       required
                     />
                   </FloatingLabel>
@@ -58,8 +62,8 @@ const ModalCon = (props) => {
                     <Form.Control
                       type="password"
                       placeholder="Votre Mot de Passe"
-                      //value={password}
-                      //onChange={(e) => setPassword(e.target.value)}
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
                       required
                     />
                   </FloatingLabel>
