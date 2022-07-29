@@ -32,6 +32,7 @@ module.exports = {
       <p> <strong>Téléphone : </strong> ${req.body.tel} </p>
       <p> <strong>Adresse : </strong> ${req.body.adresse} </p>
           <p> <strong>Message : </strong> ${req.body.content}</p>
+          <p>Bonne Journée</p>
         `,
     };
     transporter.sendMail(mailOptions, (err, info) => {

@@ -33,23 +33,23 @@ class PicsController {
           status: "success",
           flash: "Create Article Success !",
           dbPics: data,
-        }); 
+        });
       });
     } catch (error) {
       throw error;
     }
   }
   async create(req, res) {
-    const {authorname,alt } = req.body;
+    const { authorname, alt } = req.body;
     const id = req.params.id;
-    const photo = req.file.filename.split('.').slice(0, -1).join('.') + ".webp";
+    const photo = req.file.filename.split(".").slice(0, -1).join(".") + ".webp";
     let newPhoto = new Albums({
       id: Number(id),
       photo: photo,
-     authorname:authorname,
-     alt:alt,
+      authorname: authorname,
+      alt: alt,
     });
-    try { 
+    try {
       newPhoto
         .create()
         .then((data) => {
@@ -65,8 +65,6 @@ class PicsController {
       throw error;
     }
   }
-
- 
 
   async deleteOne(req, res) {
     try {
@@ -85,7 +83,6 @@ class PicsController {
       throw error;
     }
   }
-
 }
 
 module.exports = PicsController;
