@@ -35,19 +35,19 @@ const Charpente = () => {
       <MainLayout>
         <Container>
           <h1 className="text-center ssligne">
-            Charpente / Couverture / Zinguerie
+            Charpente-Couverture-Zinguerie
           </h1>
           <div className="reveal">
             <Row>
               <Col md={6} className="d-flex justify-content-center">
                 <img
                   alt="carport"
-                  src="./image.webp"
+                  src="./images/charpente.webp"
                   className=" img-border img-fluid d-flex justify-content-center"
                 ></img>
               </Col>
 
-              <Col md={6}>
+              <Col md={6} >
                 <p className="justif">
                   <b className="gras">Notre métier de charpentier bois :</b>{" "}
                   Nous intervenons sur les charpentes traditionnelles et/ou
@@ -70,7 +70,7 @@ const Charpente = () => {
           </div>
         </Container>
         <div className="reveal">
-          <h1 className="text-center ssligne mt-5">Récents</h1>
+          <h1 className="text-center ssligne mt-3">Récents</h1>
           <ListBlog list={listArticles} />
         </div>
       </MainLayout>

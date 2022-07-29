@@ -101,6 +101,7 @@ const Devis = () => {
                       placeholder="Votre nom"
                       value={nom}
                       onChange={(e) => setNom(e.target.value)}
+                      required
                     />
                   </FloatingLabel>
                 </Col>
@@ -115,6 +116,7 @@ const Devis = () => {
                       placeholder="Votre prénom"
                       value={prenom}
                       onChange={(e) => setPrenom(e.target.value)}
+                      required
                     />
                   </FloatingLabel>
                 </Col>
@@ -129,6 +131,7 @@ const Devis = () => {
                   placeholder="Votre Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  required
                 />
               </FloatingLabel>
               <FloatingLabel
@@ -141,6 +144,7 @@ const Devis = () => {
                   placeholder="Votre n° de téléphone"
                   value={tel}
                   onChange={(e) => setTel(e.target.value)}
+                  required
                 />
               </FloatingLabel>
               <FloatingLabel
@@ -153,11 +157,12 @@ const Devis = () => {
                   placeholder="Votre adresse"
                   value={adresse}
                   onChange={(e) => setAdresse(e.target.value)}
+                  required
                 />
               </FloatingLabel>
               <FloatingLabel
                 controlId="floatingInput2"
-                label="Votre message"
+                label="Décrivez nous votre Projet"
                 className="mb-3"
               >
                 <Form.Control

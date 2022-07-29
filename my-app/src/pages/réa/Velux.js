@@ -44,9 +44,15 @@ const Velux = () => {
                   className=" img-border img-fluid d-flex justify-content-center"
                 ></img>
               </Col>
-
-              <Col md={6}>
-                <p className="justif ">
+              <Col md={6} className="d-flex justify-content-center">
+                <img
+                  alt="carport"
+                  src="./images/velux2.webp"
+                  className=" img-border img-fluid d-flex justify-content-center"
+                ></img>
+              </Col>
+              <Col md={12} className="mt-3">
+                <p className="justif">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Feugiat scelerisque varius morbi enim nunc faucibus a
@@ -70,7 +76,7 @@ const Velux = () => {
           </div>
         </Container>
         <div className="reveal">
-          <h1 className="text-center ssligne mt-5">Récents</h1>
+          <h1 className="text-center ssligne mt-2">Récents</h1>
           <ListBlog list={listArticles} />
         </div>
       </MainLayout>

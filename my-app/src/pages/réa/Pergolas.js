@@ -34,7 +34,7 @@ const Pergolas = () => {
     <div>
       <MainLayout>
         <Container>
-          <h1 className="text-center ssligne">Pergolas</h1>
+          <h1 className="text-center ssligne">Pergolas Bois</h1>
           <div className="reveal">
             <Row>
               <Col md={6} className="d-flex justify-content-center">
@@ -70,7 +70,7 @@ const Pergolas = () => {
           </div>
         </Container>
         <div className="reveal">
-          <h1 className="text-center ssligne mt-5">Récents</h1>
+          <h1 className="text-center ssligne mt-3">Récents</h1>
           <ListBlog list={listArticles} />
         </div>
       </MainLayout>

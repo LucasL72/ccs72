@@ -11,7 +11,7 @@ const Album = (props) => {
         <Row>
         {list.length > 0 &&
             list.map((item) => {
-              return <Photos key={item.id} item={item} />;
+              return <Photos item={item} />;
             })}
         </Row>
       </Container>

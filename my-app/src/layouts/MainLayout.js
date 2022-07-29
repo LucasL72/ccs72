@@ -13,6 +13,7 @@ const MainLayout = ({ children }) => {
   return (
     <div>
       <Navigbar />
+      {" "}
       <Header />
       <main>{children}</main>
       <Footer />

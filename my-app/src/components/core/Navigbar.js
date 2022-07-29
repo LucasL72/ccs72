@@ -40,7 +40,7 @@ const Navigbar = () => {
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/#/Charpente">
-                Charpente/Couvertures/Zingueries
+                Charpente-Couvertures-Zingueries
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/#/Pergolas">
@@ -98,7 +98,7 @@ const Navigbar = () => {
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/#/Charpente">
-                Charpente/Couvertures/Zingueries
+                Charpente-Couvertures-Zingueries
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/#/Pergolas">
@@ -159,7 +159,7 @@ const Navigbar = () => {
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/#/Charpente">
-                Charpente/Couvertures/Zingueries
+                Charpente-Couvertures-Zingueries
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/#/Pergolas">
@@ -210,7 +210,7 @@ const Navigbar = () => {
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/#/Charpente">
-                Charpente/Couvertures/Zingueries
+                Charpente-Couvertures-Zingueries
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/#/Pergolas">
@@ -265,9 +265,9 @@ const Navigbar = () => {
           <Navbar.Brand href="/">
             <img
               alt="Logo ccs72"
-              src="../logo.png"
+              src="../logo1.png"
               width="150"
-              height="50"
+              height="60"
               className="d-inline-block"
             />{" "}
           </Navbar.Brand>

@@ -11,6 +11,7 @@ const AdminLayout = ({ children }) => {
       return (
         <div>
           <Navigbar />
+          {" "}
           <main>{children}</main>
           <Footer />
         </div>

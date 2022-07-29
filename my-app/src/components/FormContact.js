@@ -113,6 +113,7 @@ const FormContact = () => {
                       placeholder="Votre nom"
                       value={nom}
                       onChange={(e) => setNom(e.target.value)}
+                      required
                     />
                   </FloatingLabel>
                 </Col>
@@ -127,6 +128,7 @@ const FormContact = () => {
                       placeholder="Votre prénom"
                       value={prenom}
                       onChange={(e) => setPrenom(e.target.value)}
+                      required
                     />
                   </FloatingLabel>
                 </Col>
@@ -141,6 +143,7 @@ const FormContact = () => {
                   placeholder="Votre Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  required
                 />
               </FloatingLabel>
               <FloatingLabel
@@ -153,6 +156,8 @@ const FormContact = () => {
                   placeholder="Votre n° de téléphone"
                   value={tel}
                   onChange={(e) => setTel(e.target.value)}
+                  required
+
                 />
               </FloatingLabel>
               <FloatingLabel
@@ -165,11 +170,12 @@ const FormContact = () => {
                   placeholder="Votre adresse"
                   value={adresse}
                   onChange={(e) => setAdresse(e.target.value)}
+                  required
                 />
               </FloatingLabel>
               <FloatingLabel
                 controlId="floatingInput2"
-                label="Votre message"
+                label="Décrivez nous votre Projet"
                 className="mb-3"
               >
                 <Form.Control
@@ -189,7 +195,7 @@ const FormContact = () => {
           <Col md={6}>
             <div className="map mb-3">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1334.1707834132549!2d0.3589225908531597!3d48.02642939761747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e2f4eeb66c036f%3A0x8eb4ba45a2bf2d72!2sEntreprise%20David!5e0!3m2!1sfr!2sfr!4v1657200927011!5m2!1sfr!2sfr"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1334.1707937057267!2d0.359664!3d48.02642900000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc922eef2da4e970c!2sCHARPENTE%20COUVERTURE%20DE%20LA%20SARTHE!5e0!3m2!1sfr!2sfr!4v1659082730063!5m2!1sfr!2sfr"
                 width="600"
                 height="450"
                 allowFullScreen=""

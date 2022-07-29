@@ -9,7 +9,7 @@ import jwt_decode from "jwt-decode";
 const Photos = (props) => {
   const { item } = props;
   const [modalDelShow, setModalDelShow] = React.useState(false);
-  const CheckLog = () => {
+  const CheckLogPics = () => {
     const userToken = localStorage.getItem("user_token");
 
     if (
@@ -34,37 +34,38 @@ const Photos = (props) => {
       jwt_decode(userToken).isVerified === 1 &&
       jwt_decode(userToken).isAdmin === 1
     )
-      return;
-    <>
-      {" "}
-      <ImageViewer>
-        <img
-          src={`${urlImgAlbum + item.photo}`}
-          alt={item.alt}
-          className="img-border  position-relative"
-          width="100%"
-        />
-      </ImageViewer>
-      <div className="text-center">
-        <Button
-          variant="outline-danger"
-          type="submit"
-          onClick={() => setModalDelShow(true)}
-        >
-          Supprimer
-        </Button>
-        <ModalDeletePic
-          show={modalDelShow}
-          onHide={() => setModalDelShow(false)}
-          item={item}
-        />
-      </div>
-    </>;
+      return (
+        <>
+          {" "}
+          <ImageViewer>
+            <img
+              src={`${urlImgAlbum + item.photo}`}
+              alt={item.alt}
+              className="img-border  position-relative"
+              width="100%"
+            />
+          </ImageViewer>
+          <div className="text-center">
+            <Button
+              variant="outline-danger"
+              type="submit"
+              onClick={() => setModalDelShow(true)}
+            >
+              Supprimer
+            </Button>
+            <ModalDeletePic
+              show={modalDelShow}
+              onHide={() => setModalDelShow(false)}
+              item={item}
+            />
+          </div>
+        </>
+      );
   };
   return (
     <>
       <Col md={4} className="mb-3">
-        <CheckLog />
+        <CheckLogPics />
       </Col>
     </>
   );

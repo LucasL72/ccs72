@@ -178,7 +178,7 @@ const Footer = () => {
       <Container fluid>
         <div className="text-center">
           <Nav.Link href="/">
-            <img alt="Logo" src="../logo.png" width="125" height="50" />
+            <img alt="Logo" src="../logo1.png" width="125" height="50" />
           </Nav.Link>
         </div>
         <Row>

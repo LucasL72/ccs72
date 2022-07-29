@@ -44,8 +44,9 @@ const Contact = () => {
                 <Col md={6} className="d-flex justify-content-center mb-4 mt-4">
                   <img
                     alt="carport"
-                    src="./image.webp"
+                    src="./images/devanture.webp"
                     className=" img-boder img-fluid d-flex justify-content-center scale rounded"
+                    width="500"
                   ></img>
                 </Col>
 
