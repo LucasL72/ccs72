@@ -32,6 +32,9 @@ const Header = () => {
         <Carousel.Item>
           <div className="banner9"></div>
         </Carousel.Item>
+        <Carousel.Item>
+          <div className="banner10"></div>
+        </Carousel.Item>
       </Carousel>
     </div>
   );
