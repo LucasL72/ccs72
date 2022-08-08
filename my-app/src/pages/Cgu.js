@@ -13,8 +13,8 @@ const Cgu = () => {
             2004-575 du 21 juin 2004 pour la Confiance dans l'économie
             numérique, dite L.C.E.N., nous portons à la connaissance des
             utilisateurs et visiteurs du site :{" "}
-            <a href="https://www.ccs72.fr/" target="_blank" rel="noreferrer">
-              https://www.ccs72.fr/
+            <a href="https://www.charpente72.fr/" target="_blank" rel="noreferrer">
+              https://www.charpente72.fr/
             </a>{" "}
             les informations suivantes :
           </p>
@@ -86,20 +86,20 @@ const Cgu = () => {
           <p>
             Est désigné ci-après : <strong>Utilisateur</strong>, tout internaute
             se connectant et utilisant le site susnommé :{" "}
-            <a href="https://www.ccs72.fr/" target="_blank" rel="noreferrer">
-              https://www.ccs72.fr/
+            <a href="https://www.charpente72.fr/" target="_blank" rel="noreferrer">
+              https://www.charpente72.fr/
             </a>
             .<br />
-            Le site <strong>https://www.ccs72.fr/</strong>
+            Le site <strong>https://www.charpente72.fr/</strong>
             <strong> </strong>regroupe un ensemble de services, dans l'état, mis
             à la disposition des utilisateurs. Il est ici précisé que ces
             derniers doivent rester courtois et faire preuve de bonne foi tant
             envers les autres utilisateurs qu'envers le webmaster du site
-            https://www.ccs72.fr/ Le site https://www.ccs72.fr/ est mis à jour
+            https://www.charpente72.fr/ Le site https://www.charpente72.fr/ est mis à jour
             régulièrement par L'association Graine de Citoyen Montgesnois .
             <br />
             L'entreprise David s’efforce de fournir sur le site
-            https://www.ccs72.fr/ des informations les plus précises possibles
+            https://www.charpente72.fr/ des informations les plus précises possibles
             (sous réserve de modifications apportées depuis leur mise en ligne),
             mais ne saurait garantir l'exactitude, la complétude et l'actualité
             des informations diffusées sur son site, qu’elles soient de son fait
@@ -113,14 +113,14 @@ const Cgu = () => {
           <br />
           <br />
           <p>
-            Le site https://www.ccs72.fr/est par principe accessible aux
+            Le site https://www.charpente72.fr/est par principe accessible aux
             utilisateurs 24/24h, 7/7j, sauf interruption, programmée ou non,
             pour les besoins de sa maintenance ou en cas de force majeure. En
-            cas d’impossibilité d’accès au service,https://www.ccs72.fr/
+            cas d’impossibilité d’accès au service,https://www.charpente72.fr/
             s’engage à faire son maximum afin de rétablir l’accès au service et
             s’efforcera alors de communiquer préalablement aux utilisateurs les
             dates et heures de l’intervention. N’étant soumis qu’à une
-            obligation de moyen, https://www.ccs72.fr/ ne saurait être tenu pour
+            obligation de moyen, https://www.charpente72.fr/ ne saurait être tenu pour
             responsable de tout dommage, quelle qu’en soit la nature, résultant
             d’une indisponibilité du service.
           </p>
@@ -135,7 +135,7 @@ const Cgu = () => {
             textes, images, graphismes, logo, icônes, sons, logiciels…
             <br />
             Toute reproduction totale ou partielle du site
-            https://www.ccs72.fr/, représentation, modification, publication,
+            https://www.charpente72.fr/, représentation, modification, publication,
             adaptation totale ou partielle de l'un quelconque de ces éléments,
             quel que soit le moyen ou le procédé utilisé, est interdite, sauf
             autorisation écrite préalable de L'entreprise David , propriétaire
@@ -147,7 +147,7 @@ const Cgu = () => {
 
           <h2>5. Liens hypertextes et cookies </h2>
           <p>
-            Le site https://www.ccs72.fr/ contient un certain nombre de liens
+            Le site https://www.charpente72.fr/ contient un certain nombre de liens
             hypertextes vers d’autres sites (partenaires, informations …) mis en
             place avec l’autorisation de l'entreprise David . Cependant,
             l'entreprise David n’a pas la possibilité de vérifier l'ensemble du
@@ -155,7 +155,7 @@ const Cgu = () => {
             de ce fait quand aux risques éventuels de contenus illicites.
             <br />
             L’utilisateur est informé que lors de ses visites sur le site
-            https://www.ccs72.fr/, un ou des cookies sont susceptibles de
+            https://www.charpente72.fr/, un ou des cookies sont susceptibles de
             s’installer automatiquement sur son ordinateur par l'intermédiaire
             de son logiciel de navigation. Un cookie est un bloc de données qui
             ne permet pas d'identifier l'utilisateur, mais qui enregistre des
@@ -188,13 +188,13 @@ const Cgu = () => {
           </p>
 
           <p>
-            Sur le site https://www.ccs72.fr/, l'entreprise David ne collecte
+            Sur le site https://www.charpente72.fr/, l'entreprise David ne collecte
             des informations personnelles ( suivant l'article 4 loi n°78-17 du
             06 janvier 1978) relatives à l'utilisateur que pour le besoin de
-            certains services proposés par le site https://www.ccs72.fr/.
+            certains services proposés par le site https://www.charpente72.fr/.
             L'utilisateur fournit ces informations en toute connaissance de
             cause, notamment lorsqu'il procède par lui-même à leur saisie. Il
-            est alors précisé à l'utilisateur du site https://www.ccs72.fr/
+            est alors précisé à l'utilisateur du site https://www.charpente72.fr/
             l’obligation ou non de fournir ces informations.
             <br />
             Conformément aux dispositions des articles 38 et suivants de la loi
@@ -202,9 +202,9 @@ const Cgu = () => {
             aux libertés, tout utilisateur dispose d’un droit d’accès, de
             rectification, de suppression et d’opposition aux données
             personnelles le concernant. Pour l’exercer, adressez votre demande à
-            https://www.ccs72.fr/ par email :{" "}
+            https://www.charpente72.fr/ par email :{" "}
             <strong>
-              <a href="mailto:contact@ccs72.fr?subject=Contact à partir des mentions légales via le site  https://www.ccs72.fr/">
+              <a href="mailto:contact@ccs72.fr?subject=Contact à partir des mentions légales via le site  https://www.charpente72.fr/">
                 contact@ccs72.fr
               </a>
             </strong>
@@ -215,16 +215,16 @@ const Cgu = () => {
 
           <p>
             Aucune information personnelle de l'utilisateur du site
-            https://www.ccs72.fr/ n'est publiée à l'insu de l'utilisateur,
+            https://www.charpente72.fr/ n'est publiée à l'insu de l'utilisateur,
             échangée, transférée, cédée ou vendue sur un support quelconque à
             des tiers. Seule l'hypothèse du rachat du site
             www.grainesdecitoyenmontegsnois.com et de ses droits autorise Lucas
             Ledoux à transmettre les dites informations à l'éventuel acquéreur
             qui serait à son tour tenu à la même obligation de conservation et
             de modification des données vis à vis de l'utilisateur du site
-            https://www.ccs72.fr/.
+            https://www.charpente72.fr/.
             <br />
-            Le site https://www.ccs72.fr/ est en conformité avec le RGPD{" "}
+            Le site https://www.charpente72.fr/ est en conformité avec le RGPD{" "}
             <a href="https://www.cnil.fr/"> voir CNIL</a>
           </p>
 

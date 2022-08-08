@@ -8,6 +8,7 @@ import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 import EmailIcon from "@mui/icons-material/Email";
 import { useDispatch } from "react-redux";
 import { createMessage, getMessage } from "../store/actions/MessActions";
+//import ReCAPTCHA from "react-google-recaptcha";
 
 const FormContact = () => {
   const [produit, setProduit] = useState("");
@@ -95,9 +96,7 @@ const FormContact = () => {
                   <option>Charpente /Couvertures / Zingueries</option>
                   <option>Pergolas Bois</option>
                   <option>Velux</option>
-                  <option disabled>
-                    --------------------------
-                  </option>
+                  <option disabled>--------------------------</option>
                   <option>Envoyer un message</option>
                 </Form.Select>
               </FloatingLabel>
@@ -157,7 +156,6 @@ const FormContact = () => {
                   value={tel}
                   onChange={(e) => setTel(e.target.value)}
                   required
-
                 />
               </FloatingLabel>
               <FloatingLabel
@@ -185,6 +183,11 @@ const FormContact = () => {
                   onChange={(e) => setContent(e.target.value)}
                 />
               </FloatingLabel>
+              {/* <ReCAPTCHA
+                sitekey={process.env.REACT_APP_KEY}
+                render="explicit"
+                onChange={handleForm}
+  />*/}
               <div className="text-center">
                 <button className="btn-grad" type="submit">
                   Envoyer

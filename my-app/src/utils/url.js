@@ -1,4 +1,4 @@
-const urlImgArt= "http://localhost:3030/api/assets/images/Articles/"
-const urlImgAlbum= "http://localhost:3030/api/assets/images/Album/"
+const urlImgArt= process.env.REACT_APP_ART;
+const urlImgAlbum= process.env.REACT_APP_ALBUM;
 
 module.exports = {urlImgArt,urlImgAlbum}

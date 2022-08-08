@@ -212,7 +212,7 @@ const Footer = () => {
                   href="https://www.orcab.coop/cooperatives/cobat"
                 >
                   <img
-                    src="./images/cobat.jpg"
+                    src="./images/cobat.webp"
                     alt="logo cobat"
                     className="img-fluid"
                   ></img>
@@ -238,7 +238,7 @@ const Footer = () => {
                   href="https://www.ffbatiment.fr/"
                 >
                   <img
-                    src="./images/ffb.png"
+                    src="./images/ffb.webp"
                     alt="logo ffb"
                     className="img-fluid"
                   ></img>

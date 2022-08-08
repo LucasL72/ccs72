@@ -22,7 +22,15 @@ main {
 }
 
 .gras {
-  color: rgb(213, 118, 1);
+  color: transparent;
+  background: linear-gradient(
+    218deg,
+    rgb(59, 147, 27) 50%,
+    rgba(242, 133, 0, 1) 50%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
 }
 /*  VERT & ORANGE
  background: rgb(59, 147, 27);

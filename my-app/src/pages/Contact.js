@@ -41,7 +41,7 @@ const Contact = () => {
             </h1>
             <div className="reveal">
               <Row>
-                <Col md={6} className="d-flex justify-content-center mb-4 mt-4">
+                <Col md={6} className="d-flex justify-content-center mb-3 mt-3">
                   <img
                     alt="carport"
                     src="./images/devanture.webp"
@@ -51,26 +51,40 @@ const Contact = () => {
                 </Col>
 
                 <Col md={6} className="mb-4 mt-4">
+                  <h2 className="gras text-center">
+                    Présentation de l'entreprise{" "}
+                  </h2>
                   <p className="justif">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Feugiat scelerisque varius morbi enim nunc faucibus
-                    a pellentesque sit. Volutpat ac tincidunt vitae semper.
-                    Vitae semper quis lectus nulla at volutpat. Elit duis
-                    tristique sollicitudin nibh sit amet commodo nulla facilisi.
-                    In ornare quam viverra orci sagittis eu volutpat. Risus
-                    nullam eget felis eget. Et netus et malesuada fames ac
-                    turpis egestas. Egestas fringilla phasellus faucibus
-                    scelerisque eleifend donec. Viverra orci sagittis eu
-                    volutpat. Sed egestas egestas fringilla phasellus faucibus
-                    scelerisque. Tempus egestas sed sed risus pretium. Mattis
-                    nunc sed blandit libero. Euismod in pellentesque massa
-                    placerat duis ultricies lacus sed. Scelerisque eu ultrices
-                    vitae auctor. Massa placerat duis ultricies lacus sed
-                    turpis. Elementum nibh tellus molestie nunc. Commodo sed
-                    egestas egestas fringilla phasellus faucibus. Tristique
-                    magna sit amet purus gravida quis blandit.
+                    Le siège social{" "}
+                    <b className="gras">
+                      ,situé à Saint-Mars La Brière dans la Sarthe (72),
+                    </b>{" "}
+                    est visible et accessible facilement depuis la RN 23 axe Le
+                    Mans / La Ferté Bernard.
+                    <br></br> <br></br>Nous disposons également d’un bureau quai
+                    Ledru Rollin au Mans (entre le tunnel et la rue Voltaire) où
+                    nous recevons uniquement sur rendez-vous.
+                    <br></br>
+                    <br></br>
+                    <b className="gras">
+                      L' entreprise Charpente Couverture de la Sarthe
+                    </b>{" "}
+                    est une reprise de la SARL BOULAY Pascal située à Soulitré
+                    (72370) depuis 18 ans.
+                    <br></br> <br></br>L'équipe est composée de{" "}
+                    <b className="gras">
+                      {" "}
+                      salariés qualifiés dont 1 chef d'équipe - formation
+                      compagnon du devoir - 30 ans d'expérience, 2 ouvriers
+                      qualifiés 13 ans et 9 ans d'expérience.
+                    </b>
+                    <br></br>
+                    <br></br>
+                    <b className="gras">Notre savoir faire : </b>{" "}
+                    Charpente-Couverture-Zinguerie-Carport bois-Pergolas
+                    bois-Velux
                   </p>
+                  <h3 className="gras text-center">Ils nous soutiennent :</h3>
                   <Row>
                     <Col md={2} className="text-center mb-3">
                       <a
@@ -92,7 +106,7 @@ const Contact = () => {
                         href="https://www.orcab.coop/cooperatives/cobat"
                       >
                         <img
-                          src="./images/cobat.jpg"
+                          src="./images/cobat.webp"
                           alt="logo cobat"
                           className="img-fluid"
                         ></img>
@@ -118,7 +132,7 @@ const Contact = () => {
                         href="https://www.ffbatiment.fr/"
                       >
                         <img
-                          src="./images/ffb.png"
+                          src="./images/ffb.webp"
                           alt="logo ffb"
                           className="img-fluid"
                         ></img>
