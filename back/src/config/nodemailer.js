@@ -22,9 +22,9 @@ module.exports = {
     const mailOptions = {
       from: process.env.MAIL,
       to: process.env.MAIL_CCS,
-      subject: "Message / Demande devis site ccs72, " + req.body.produit,
+      subject: "Message / Demande devis site charpente72.fr, " + req.body.produit,
       html: `
-      <strong>Bonjour vous avez reçu un message de ${req.body.prenom} ${req.body.nom} depuis le site ccs72.fr </strong>
+      <strong>Bonjour vous avez reçu un message de ${req.body.prenom} ${req.body.nom} depuis le site charpente72.fr </strong>
       <p> <strong>Sujet : </strong>  ${req.body.produit} </p>
       <p>  <strong>Nom : </strong>  ${req.body.nom} </p>
       <p> <strong>Prénom : </strong> ${req.body.prenom} </p>
