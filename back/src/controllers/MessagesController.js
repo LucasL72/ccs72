@@ -1,5 +1,5 @@
 const Message = require("../models/MessagesModel");
-const nodemailer = require("../config/Nodemailer");
+const nodemailer = require("../config/nodemailer");
 
 class MessagesController {
   async getAll(req, res) {

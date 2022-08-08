@@ -1,4 +1,4 @@
-const Server = require('./src/Server');
+const Server = require('./src/serverc');
 const express = require('express');
 const app = express();
 

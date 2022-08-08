@@ -16,11 +16,11 @@ class Server {
     this.app.use(
       cors({
         origin: [
-          "http://localhost:3000",
           "https://www.charpente72.fr",
           "https://charpente72.fr",
           "http://www.charpente72.fr",
           "http://charpente72.fr",
+          "http://localhost:3000",
         ],
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true,
@@ -43,7 +43,7 @@ class Server {
     );
 
     // Express static permet de diriger un chemin sur un dossier en particulier
-    this.app.use("/api/assets", express.static("public"));
+    this.app.use("/apiccs/assets", express.static("public"));
     // Routes
     this.app.use(router);
     // Run app
