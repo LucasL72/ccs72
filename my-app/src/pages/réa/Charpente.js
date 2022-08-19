@@ -43,6 +43,7 @@ const Charpente = () => {
                 <img
                   alt="carport"
                   src="./images/charpente.webp"
+                  height="300"
                   className=" img-border img-fluid d-flex justify-content-center"
                 ></img>
               </Col>

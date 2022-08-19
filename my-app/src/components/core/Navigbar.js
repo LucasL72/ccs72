@@ -61,7 +61,8 @@ const Navigbar = () => {
           </Nav>
           <Nav className="mx-auto">
             <a className="btn-grad" href="tel: 02 43 89 64 02">
-              <PhoneIcon /> 02 43 89 64 02
+              <PhoneIcon />
+              0243896402
             </a>{" "}
           </Nav>
           <Nav className="mx-auto">
@@ -119,7 +120,8 @@ const Navigbar = () => {
           </Nav>
           <Nav className="mx-auto">
             <a className="btn-grad" href="tel: 02 43 89 64 02">
-              <PhoneIcon /> 02 43 89 64 02
+              <PhoneIcon />
+              0243896402
             </a>{" "}
           </Nav>
           <Nav>
@@ -231,7 +233,7 @@ const Navigbar = () => {
           </Nav>
           <Nav className="mx-auto">
             <a className="btn-grad" href="tel: 02 43 89 64 02">
-              <PhoneIcon /> 02 43 89 64 02
+              <PhoneIcon /> 0243896402
             </a>{" "}
           </Nav>
           <Nav>
