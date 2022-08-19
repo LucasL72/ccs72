@@ -42,7 +42,7 @@ const Charpente = () => {
               <Col md={6} className="d-flex justify-content-center">
                 <img
                   alt="carport"
-                  src="./images/charpente.webp"
+                  src="./images/charpentefix.webp"
                   height="300"
                   className=" img-border img-fluid d-flex justify-content-center"
                 ></img>
