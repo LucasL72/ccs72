@@ -52,12 +52,20 @@ const Velux = () => {
                 ></img>
               </Col>
               <Col md={12} className="mt-3">
-                <p className="justif">
-    
+                <p className="text-center">Photos intérieur et extérieur de velux posé chez un particulier.</p>
+                <p className="text-center gras">
+                  Découvrez toute notre gamme de Velux.
                 </p>
+                <br></br>
+                <div className="text-center">
+                  <a className="btn-grad" href="/#/Devis">
+                    Avoir son devis
+                  </a>
+                </div>
               </Col>
             </Row>
           </div>
+          <br></br>
         </Container>
         <div className="reveal">
           <h1 className="text-center ssligne mt-2">Récents</h1>

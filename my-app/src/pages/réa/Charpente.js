@@ -48,7 +48,7 @@ const Charpente = () => {
                 ></img>
               </Col>
 
-              <Col md={6} >
+              <Col md={6} className="mt-5">
                 <p className="justif">
                   <b className="gras">Notre métier de charpentier bois :</b>{" "}
                   Nous intervenons sur les charpentes traditionnelles et/ou
@@ -66,6 +66,12 @@ const Charpente = () => {
                   Pour la réalisation ou l'entretien de vos gouttières,
                   cheneaux, lucarne, etc...
                 </p>
+                <br></br>
+                <div className="text-center">
+                  <a className="btn-grad" href="/#/Devis">
+                    Avoir son devis
+                  </a>
+                </div>
               </Col>
             </Row>
           </div>

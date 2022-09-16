@@ -23,10 +23,11 @@ main {
 
 .gras {
   color: transparent;
-  background: rgb(175, 96, 0);
+  background: rgb(209, 119, 15);
   -webkit-background-clip: text;
   background-clip: text;
   font-weight: bold;
+  font-size: large;
 }
 /*  VERT & ORANGE
  background: rgb(59, 147, 27);
@@ -50,6 +51,20 @@ main {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+a.dropdown-item {
+  background-color:#adb5b7;
+  color: rgb(73, 73, 73);
+}
+a.dropdown-item:hover {
+  background-color:#adb5b7 ;
+  color: #ffffff;
+}
+div.dropdown-menu.show {
+  background-color:#adb5b7;
+}
+a.nav-link:hover {
+  color:#ffffff ;
+}
 li {
   list-style-type: none;
 }

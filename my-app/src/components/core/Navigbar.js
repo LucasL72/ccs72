@@ -260,7 +260,7 @@ const Navigbar = () => {
       <Navbar
         collapseOnSelect
         expand="lg"
-        className="Green rounded-bottom shadow p-3 bg-white"
+        className="Green bg-white"
         variant="dark"
       >
         <Container>
