@@ -1,6 +1,7 @@
 import Footer from "../components/core/Footer";
 import Navigbar from "../components/core/Navigbar";
 import { Navigate } from "react-router-dom";
+import ScrollButton from "../components/core/ScrollButton";
 import jwt_decode from "jwt-decode";
 
 const AdminLayout = ({ children }) => {
@@ -10,9 +11,8 @@ const AdminLayout = ({ children }) => {
     if (token.isVerified === 1 && token.isAdmin === 1)
       return (
         <div>
-          <Navigbar />
-          {" "}
-          <main>{children}</main>
+          <Navigbar /> <main>{children}</main>
+          <ScrollButton />
           <Footer />
         </div>
       );
