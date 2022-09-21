@@ -268,7 +268,7 @@ const Navigbar = () => {
             <img
               alt="Logo ccs72"
               src="../logo1.png"
-              width="150"
+              width="175"
               height="60"
               className="d-inline-block"
             />{" "}

@@ -1,2 +1,3 @@
 User-agent: *
-Allow: /
+Disallow: 
+https://www.charpente72.fr/sitemap.xml
