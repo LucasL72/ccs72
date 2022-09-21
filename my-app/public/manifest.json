@@ -10,13 +10,13 @@
     },
     {
       "src": "logo.png",
-      "type": "image/jpg",
-      "sizes": "192x192"
+      "type": "image/png",
+      "sizes": "125x126"
     },
     {
       "src": "logo.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "125x126"
     }
   ],
   "start_url": ".",
