@@ -20,7 +20,7 @@ const Pergolas = () => {
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible =75;
+      var elementVisible = 75;
 
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
@@ -39,16 +39,31 @@ const Pergolas = () => {
             <Row>
               <Col md={6} className="d-flex justify-content-center">
                 <img
-                  alt="carport"
-                  src="./image.webp"
+                  alt="pergolas"
+                  src="./images/pergolas.webp"
                   className=" img-border img-fluid d-flex justify-content-center"
                 ></img>
               </Col>
 
-              <Col md={6}>
+              <Col md={6} className="mt-5">
                 <p className="justif">
-                 
+                  Si vous voulez profiter de votre jardin toute l’année,
+                  l’installation d’une pergola est très intéressante. Cet espace
+                  vous permettra de déstresser et de vous protéger du soleil, de
+                  la chaleur, de la pluie, etc. Grâce à une pergola, vous pouvez
+                  créer un espace ombragé sur votre terrasse ou encore dans
+                  votre jardin. Cette construction vous permet ainsi de profiter
+                  plus longtemps de l’extérieur.
                 </p>
+                <p className="text-center gras">
+                  Découvrez toute notre gamme de Pergolas bois.
+                </p>
+                <br></br>
+                <div className="text-center">
+                  <a className="btn-grad" href="/#/Devis">
+                    Avoir son devis
+                  </a>
+                </div>
               </Col>
             </Row>
           </div>

@@ -276,8 +276,7 @@ const Footer = () => {
             </Col>
           </Col>
         </Row>
-
-        <Col md={12}>
+        </Container>
           <div className="text-center">
             Created by ©Lucas Ledoux 2022{" "}
             <a
@@ -291,8 +290,8 @@ const Footer = () => {
               Mentions légales
             </a>
           </div>
-        </Col>
-      </Container>
+        
+     
     </div>
   );
 };

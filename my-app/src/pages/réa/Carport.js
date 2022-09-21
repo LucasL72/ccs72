@@ -45,10 +45,28 @@ const Carport = () => {
                 ></img>
               </Col>
 
-              <Col md={6}>
+              <Col md={6} className="mt-5">
                 <p className="justif">
-                  
+                  Un carport est une installation permettant de protéger la
+                  voiture des aléas climatiques et des éventuelles chutes de
+                  branches. En y mettant votre véhicule dessous, vous n’aurez
+                  pas à déblayer la neige tombée dessus chaque matin. Par
+                  ailleurs, en plus d’être en retard, vous risquez de rayer la
+                  peinture de votre carrosserie au cours de cette tâche. Les
+                  jours de pluie, votre voiture sera également à l’abri. Le
+                  carport se caractérise par des piliers porteurs fixés dans un
+                  sol bétonné et une toiture plate, en pente ou triangulaire.
                 </p>
+                <p className="gras text-center">
+                  {" "}
+                  Découvrez toute notre gamme de Carport bois.
+                </p>
+                <br></br>
+                <div className="text-center">
+                  <a className="btn-grad" href="/#/Devis">
+                    Avoir son devis
+                  </a>
+                </div>
               </Col>
             </Row>
           </div>
