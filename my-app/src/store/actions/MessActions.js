@@ -31,7 +31,6 @@ export const getMessageID = (id) => {
     return api
       .get(`/Admin/Messages/${id}`)
       .then((res) => {
-        console.log("getMessageID", res.data);
         dispatch({ type: GET_MESSAGE, payload: res.data });
       })
       .catch((err) => console.log(err));

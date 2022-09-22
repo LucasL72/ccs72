@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -8,7 +8,7 @@ import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 import EmailIcon from "@mui/icons-material/Email";
 import { useDispatch } from "react-redux";
 import { createMessage, getMessage } from "../store/actions/MessActions";
-//import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const FormContact = () => {
   const [produit, setProduit] = useState("");
@@ -19,11 +19,14 @@ const FormContact = () => {
   const [adresse, setAdresse] = useState("");
   const [content, setContent] = useState("");
   const dispatch = useDispatch();
+  const captchaRef = useRef(null)
 
   const handleForm = async (e) => {
     e.preventDefault();
-
-    if (produit && nom && prenom && email && tel && adresse && content) {
+    const token = captchaRef.current.getValue();
+    captchaRef.current.reset();
+   
+    if (produit && nom && prenom && email && tel && adresse && content && token) {
       dispatch(
         createMessage({
           produit,
@@ -33,6 +36,7 @@ const FormContact = () => {
           tel,
           adresse,
           content,
+          token,
         })
       );
       setProduit("");
@@ -183,11 +187,12 @@ const FormContact = () => {
                   onChange={(e) => setContent(e.target.value)}
                 />
               </FloatingLabel>
-              {/* <ReCAPTCHA
+              <ReCAPTCHA
                 sitekey={process.env.REACT_APP_KEY}
+                ref={captchaRef}
                 render="explicit"
-                onChange={handleForm}
-  />*/}
+              ></ReCAPTCHA>
+
               <div className="text-center">
                 <button className="btn-grad" type="submit">
                   Envoyer

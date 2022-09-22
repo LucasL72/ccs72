@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import MainLayout from "../layouts/MainLayout";
 import RequestPageIcon from "@mui/icons-material/RequestPage";
 import Container from "react-bootstrap/Container";
@@ -8,7 +8,7 @@ import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import { useDispatch } from "react-redux";
 import { createMessage, getMessage } from "../store/actions/MessActions";
-//import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 const Devis = () => {
   const [produit, setProduit] = useState("");
   const [nom, setNom] = useState("");
@@ -18,11 +18,14 @@ const Devis = () => {
   const [adresse, setAdresse] = useState("");
   const [content, setContent] = useState("");
   const dispatch = useDispatch();
+  const captchaRef = useRef(null);
 
   const handleForm = async (e) => {
     e.preventDefault();
+    const token = captchaRef.current.getValue();
+    captchaRef.current.reset();
 
-    if (produit && nom && prenom && email && tel && adresse && content) {
+    if (produit && nom && prenom && email && tel && adresse && content && token) {
       dispatch(
         createMessage({
           produit,
@@ -32,6 +35,7 @@ const Devis = () => {
           tel,
           adresse,
           content,
+          token
         })
       );
       setProduit("");
@@ -156,7 +160,13 @@ const Devis = () => {
                 onChange={(e) => setContent(e.target.value)}
               />
             </FloatingLabel>
-           {/* <ReCAPTCHA sitekey={process.env.REACT_APP_KEY} render="explicit"  onChange={handleForm} />*/}
+
+            <ReCAPTCHA
+              sitekey={process.env.REACT_APP_KEY}
+              ref={captchaRef}
+              render="explicit"
+            ></ReCAPTCHA>
+
             <div className="text-center">
               <button className="btn-grad mb-4" type="submit">
                 Envoyer
