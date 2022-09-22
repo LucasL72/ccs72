@@ -1,6 +1,6 @@
 const Message = require("../models/MessagesModel");
 const nodemailer = require("../config/nodemailer");
-
+require("isomorphic-fetch");
 class MessagesController {
   async getAll(req, res) {
     try {
@@ -24,7 +24,9 @@ class MessagesController {
   }
 
   async create(req, res) {
-    const { produit, nom, prenom, email, tel, adresse, content } = req.body;
+    const { produit, nom, prenom, email, tel, adresse, content, token } =
+      req.body;
+
     let newMessage = new Message({
       produit: produit,
       nom: nom,
@@ -34,6 +36,7 @@ class MessagesController {
       adresse: adresse,
       content: content,
     });
+
     try {
       nodemailer.SendMessage(req, res),
         newMessage
@@ -49,6 +52,26 @@ class MessagesController {
           .catch((err) => console.log("error", err));
     } catch (error) {
       throw error;
+    }
+    const isHuman = await fetch(
+      `https://www.google.com/recaptcha/api/siteverify`,
+      {
+        method: "post",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
+        },
+        body: `secret=${process.env.REACT_APP_PRIVATE}&response=${token}`,
+      }
+    )
+      .then((res) => res.json())
+      .then((json) => json.success)
+      .catch((err) => console.log("error", err));
+
+    if (token == null || !isHuman) {
+      throw error;
+    } else {
+      console.log("You are human");
     }
   }
 

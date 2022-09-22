@@ -19,9 +19,7 @@ router
   .route("/api/auth/:token")
   .get(new TokenJWT().checkIsValid, new UserController().checkToken);
 
-router
-  .route("/api/")
-  .post(new UserController().create);
+router.route("/api/").post(new UserController().create);
 
 // ----------------- ALL---------------
 router.route("/api/Actu").get(new ArticleControllers().getNews);

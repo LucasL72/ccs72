@@ -52,7 +52,6 @@ class Message {
   }
 
   create() {
-    console.log("model create messages", this);
     const { produit, nom, prenom, email, tel, adresse, content } = this;
     return new Promise((resolve, reject) => {
       connection.getConnection(function (error, conn) {
