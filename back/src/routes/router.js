@@ -14,58 +14,58 @@ const PicsController = require("../controllers/PicsController");
 const UserController = require("../controllers/UserController");
 const TokenJWT = require("../middlewares/Token_jwt");
 //-------------Login-----------------
-router.route("/apiccs/login").post(new UserController().login);
+router.route("/api/login").post(new UserController().login);
 router
-  .route("/apiccs/auth/:token")
+  .route("/api/auth/:token")
   .get(new TokenJWT().checkIsValid, new UserController().checkToken);
 
 router
-  .route("/apiccs/")
+  .route("/api/")
   .post(new UserController().create);
 
 // ----------------- ALL---------------
-router.route("/apiccs/Actu").get(new ArticleControllers().getNews);
-router.route("/apiccs/Contact").post(new MessagesController().create);
+router.route("/api/Actu").get(new ArticleControllers().getNews);
+router.route("/api/Contact").post(new MessagesController().create);
 
-router.route("/apiccs/Blog").get(new ArticleControllers().getAll);
+router.route("/api/Blog").get(new ArticleControllers().getAll);
 
-router.route("/apiccs/Blog/:id").get(new ArticleControllers().getId);
-router.route("/apiccs/Photos").get(new PicsController().getAll);
+router.route("/api/Blog/:id").get(new ArticleControllers().getId);
+router.route("/api/Photos").get(new PicsController().getAll);
 
 // -----------------Admin--------------------
 router
-  .route("/apiccs/Admin/Blog")
+  .route("/api/Admin/Blog")
   .get(new ArticleControllers().getAll)
   .post(upload.single("image"), sharpArticles, new ArticleControllers().create);
 
 router
-  .route("/apiccs/Admin/Blog/:id")
+  .route("/api/Admin/Blog/:id")
   .get(new ArticleControllers().getId)
   .delete(new ArticleControllers().deleteOne);
 
 router
-  .route("/apiccs/Admin/Photos")
+  .route("/api/Admin/Photos")
   .get(new PicsController().getAll)
   .post(upload.single("image"), sharpAlbum, new PicsController().create);
 
 router
-  .route("/apiccs/Admin/Photos/:id")
+  .route("/api/Admin/Photos/:id")
   .get(new PicsController().getId)
   .delete(new PicsController().deleteOne);
 router
-  .route("/apiccs/Admin/Events")
+  .route("/api/Admin/Events")
   .get(new EventController().getAll)
   .post(new EventController().create);
 
 router
-  .route("/apiccs/Admin/Events/:id")
+  .route("/api/Admin/Events/:id")
   .get(new EventController().getId)
   .put(new EventController().editOne)
   .delete(new EventController().deleteOne);
-router.route("/apiccs/Admin/Messages").get(new MessagesController().getAll);
+router.route("/api/Admin/Messages").get(new MessagesController().getAll);
 
 router
-  .route("/apiccs/Admin/Messages/:id")
+  .route("/api/Admin/Messages/:id")
   .get(new MessagesController().getId)
   .delete(new MessagesController().deleteOne);
 
