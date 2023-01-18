@@ -50,10 +50,10 @@ const Navigbar = () => {
               <NavDropdown.Item href="/#/Velux">Velux</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item>
-              <Nav.Link href="/#/Blog">Notre Blog</Nav.Link>
+              <Nav.Link href="/#/Blog">Blog</Nav.Link>
             </Nav.Item>{" "}
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/#/Photos">Nos Photos</Nav.Link>
+              <Nav.Link href="/#/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item className="mx-auto">
               <Nav.Link href="/#/Contact"> À propos de Nous</Nav.Link>
@@ -109,10 +109,10 @@ const Navigbar = () => {
               <NavDropdown.Item href="/#/Velux">Velux</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/#/Blog">Notre Blog</Nav.Link>
+              <Nav.Link href="/#/Blog">Blog</Nav.Link>
             </Nav.Item>{" "}
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/#/Photos">Nos Photos</Nav.Link>
+              <Nav.Link href="/#/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item className="mx-auto">
               <Nav.Link href="/#/Contact"> À propos de Nous</Nav.Link>
@@ -171,10 +171,10 @@ const Navigbar = () => {
               <NavDropdown.Item href="/#/Velux">Velux</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/#/Blog">Notre Blog</Nav.Link>
+              <Nav.Link href="/#/Blog">Blog</Nav.Link>
             </Nav.Item>{" "}
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/#/Photos">Nos Photos</Nav.Link>
+              <Nav.Link href="/#/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item className="mx-auto">
               <Nav.Link href="/#/Contact"> À propos de Nous</Nav.Link>
@@ -222,10 +222,10 @@ const Navigbar = () => {
               <NavDropdown.Item href="/#/Velux">Velux</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item>
-              <Nav.Link href="/#/Blog">Notre Blog</Nav.Link>
+              <Nav.Link href="/#/Blog">Blog</Nav.Link>
             </Nav.Item>{" "}
             <Nav.Item>
-              <Nav.Link href="/#/Photos">Nos Photos</Nav.Link>
+              <Nav.Link href="/#/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="/#/Contact"> À propos de Nous</Nav.Link>
