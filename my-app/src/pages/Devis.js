@@ -174,6 +174,7 @@ const Devis = () => {
               type="checkbox"
               id="checkbox"
               label="En envoyant ce formulaire, vous consentez à la collecte de vos données personnelles afin que votre demande puisse être traîtée"
+              required
             />
             <ReCAPTCHA
               sitekey={process.env.REACT_APP_KEY}
