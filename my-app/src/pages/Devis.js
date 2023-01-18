@@ -25,7 +25,16 @@ const Devis = () => {
     const token = captchaRef.current.getValue();
     captchaRef.current.reset();
 
-    if (produit && nom && prenom && email && tel && adresse && content && token) {
+    if (
+      produit &&
+      nom &&
+      prenom &&
+      email &&
+      tel &&
+      adresse &&
+      content &&
+      token
+    ) {
       dispatch(
         createMessage({
           produit,
@@ -35,7 +44,7 @@ const Devis = () => {
           tel,
           adresse,
           content,
-          token
+          token,
         })
       );
       setProduit("");
@@ -161,6 +170,11 @@ const Devis = () => {
               />
             </FloatingLabel>
 
+            <Form.Check
+              type="checkbox"
+              id="checkbox"
+              label="En envoyant ce formulaire, vous consentez à la collecte de vos données personnelles afin que votre demande puisse être traîtée"
+            />
             <ReCAPTCHA
               sitekey={process.env.REACT_APP_KEY}
               ref={captchaRef}

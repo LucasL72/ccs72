@@ -1,4 +1,4 @@
-import React, { useState,useRef } from "react";
+import React, { useState, useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -19,14 +19,23 @@ const FormContact = () => {
   const [adresse, setAdresse] = useState("");
   const [content, setContent] = useState("");
   const dispatch = useDispatch();
-  const captchaRef = useRef(null)
+  const captchaRef = useRef(null);
 
   const handleForm = async (e) => {
     e.preventDefault();
     const token = captchaRef.current.getValue();
     captchaRef.current.reset();
-   
-    if (produit && nom && prenom && email && tel && adresse && content && token) {
+
+    if (
+      produit &&
+      nom &&
+      prenom &&
+      email &&
+      tel &&
+      adresse &&
+      content &&
+      token
+    ) {
       dispatch(
         createMessage({
           produit,
@@ -187,6 +196,11 @@ const FormContact = () => {
                   onChange={(e) => setContent(e.target.value)}
                 />
               </FloatingLabel>
+              <Form.Check
+                type="checkbox"
+                id="checkbox"
+                label="En envoyant ce formulaire, vous consentez à la collecte de vos données personnelles afin que votre demande puisse être traîtée"
+              />
               <ReCAPTCHA
                 sitekey={process.env.REACT_APP_KEY}
                 ref={captchaRef}
