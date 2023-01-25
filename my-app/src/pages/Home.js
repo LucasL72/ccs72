@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <div>
       <MainLayout>
-        <h1 className="text-center ssligne">Récents</h1>
+        <h2 className="text-center ssligne">Récents</h2>
         <div className="reveal">
           <ListBlog list={listArticles} />
         </div>

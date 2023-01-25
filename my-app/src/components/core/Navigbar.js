@@ -35,28 +35,28 @@ const Navigbar = () => {
               title="Nos Réalisations"
               id="collasible-nav-dropdown"
             >
-              <NavDropdown.Item href="/#/Carport">
+              <NavDropdown.Item href="/Carport">
                 Carport Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/#/Charpente">
+              <NavDropdown.Item href="/Charpente">
                 Charpente-Couvertures-Zingueries
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/#/Pergolas">
+              <NavDropdown.Item href="/Pergolas">
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/#/Velux">Velux</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item>
-              <Nav.Link href="/#/Blog">Blog</Nav.Link>
+              <Nav.Link href="/Blog">Blog</Nav.Link>
             </Nav.Item>{" "}
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/#/Photos">Galerie</Nav.Link>
+              <Nav.Link href="/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/#/Contact"> À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact"> À propos de Nous</Nav.Link>
             </Nav.Item>{" "}
           </Nav>
           <Nav className="mx-auto">
@@ -66,7 +66,7 @@ const Navigbar = () => {
             </a>{" "}
           </Nav>
           <Nav className="mx-auto">
-            <a className="btn-grad" href="/#/Devis">
+            <a className="btn-grad" href="/Devis">
               Avoir son devis
             </a>
           </Nav>
@@ -94,28 +94,28 @@ const Navigbar = () => {
               title="Nos Réalisations"
               id="collasible-nav-dropdown"
             >
-              <NavDropdown.Item href="/#/Carport">
+              <NavDropdown.Item href="/Carport">
                 Carport Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/#/Charpente">
+              <NavDropdown.Item href="/Charpente">
                 Charpente-Couvertures-Zingueries
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/#/Pergolas">
+              <NavDropdown.Item href="/Pergolas">
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/#/Velux">Velux</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item className="mx-auto">
               <Nav.Link href="/#/Blog">Blog</Nav.Link>
             </Nav.Item>{" "}
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/#/Photos">Galerie</Nav.Link>
+              <Nav.Link href="/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/#/Contact"> À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact"> À propos de Nous</Nav.Link>
             </Nav.Item>{" "}
           </Nav>
           <Nav className="mx-auto">
@@ -125,7 +125,7 @@ const Navigbar = () => {
             </a>{" "}
           </Nav>
           <Nav>
-            <a className="btn-grad" href="/#/Devis">
+            <a className="btn-grad" href="/Devis">
               Avoir son devis
             </a>
           </Nav>
@@ -156,38 +156,38 @@ const Navigbar = () => {
               title="Nos Réalisations"
               id="collasible-nav-dropdown"
             >
-              <NavDropdown.Item href="/#/Carport">
+              <NavDropdown.Item href="/Carport">
                 Carport Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/#/Charpente">
+              <NavDropdown.Item href="/Charpente">
                 Charpente-Couvertures-Zingueries
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/#/Pergolas">
+              <NavDropdown.Item href="/Pergolas">
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/#/Velux">Velux</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/#/Blog">Blog</Nav.Link>
+              <Nav.Link href="/Blog">Blog</Nav.Link>
             </Nav.Item>{" "}
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/#/Photos">Galerie</Nav.Link>
+              <Nav.Link href="/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/#/Contact"> À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact"> À propos de Nous</Nav.Link>
             </Nav.Item>{" "}
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/#/admin">admin</Nav.Link>
+              <Nav.Link href="/admin">admin</Nav.Link>
             </Nav.Item>
           </Nav>
           <Nav className="mx-auto">
             <p className="text-center user">{jwt_decode(userToken).email}</p>
           </Nav>
           <Nav>
-            <a className="btn-grad" href="/#/Devis">
+            <a className="btn-grad" href="/Devis">
               Avoir son devis
             </a>
           </Nav>
@@ -207,28 +207,28 @@ const Navigbar = () => {
               <Nav.Link href="/">Accueil</Nav.Link>
             </Nav.Item>
             <NavDropdown title="Nos Réalisations" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/#/Carport">
+              <NavDropdown.Item href="/Carport">
                 Carport Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/#/Charpente">
+              <NavDropdown.Item href="/Charpente">
                 Charpente-Couvertures-Zingueries
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/#/Pergolas">
+              <NavDropdown.Item href="/Pergolas">
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/#/Velux">Velux</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item>
-              <Nav.Link href="/#/Blog">Blog</Nav.Link>
+              <Nav.Link href="/Blog">Blog</Nav.Link>
             </Nav.Item>{" "}
             <Nav.Item>
-              <Nav.Link href="/#/Photos">Galerie</Nav.Link>
+              <Nav.Link href="/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/#/Contact"> À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact"> À propos de Nous</Nav.Link>
             </Nav.Item>{" "}
           </Nav>
           <Nav className="mx-auto">
@@ -237,7 +237,7 @@ const Navigbar = () => {
             </a>{" "}
           </Nav>
           <Nav>
-            <a className="btn-grad" href="/#/Devis">
+            <a className="btn-grad" href="/Devis">
               Avoir son devis
             </a>
           </Nav>

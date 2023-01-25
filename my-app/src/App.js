@@ -14,7 +14,7 @@ import Velux from "./pages/réa/Velux";
 // Admin
 import Admin from "./pages/Admin";
 
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const AdminRoutes = () => {
   return (
@@ -26,7 +26,7 @@ const AdminRoutes = () => {
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="Blog" exact element={<Blog />} />
@@ -42,7 +42,7 @@ function App() {
         <Route path="Devis" exact element={<Devis />} />
         <Route path="/admin/*" exact element={<AdminRoutes />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
