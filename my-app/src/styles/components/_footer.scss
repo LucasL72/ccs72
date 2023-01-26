@@ -1,4 +1,4 @@
-.Footer {
+footer {
   background: #283048; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -11,7 +11,39 @@
     #283048
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
-  min-height: 30vh;
+  box-shadow: 0 -4px 10px 3px rgba(0, 0, 0, 0.5);
+}
+.logo{
+  margin-right: 20px;
 }
 
-
+.heart {
+  color: #1273f3;
+  animation-name: heart;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+.heart:hover {
+  color: #da2029;
+  @keyframes heart {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1.08);
+    }
+    40% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(1.08);
+    }
+    80% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

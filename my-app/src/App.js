@@ -7,6 +7,7 @@ import Devis from "./pages/Devis";
 import Cgu from "./pages/Cgu";
 import Politiques from "./pages/Politiques";
 // Réa
+import Réalisations from "./pages/réa/Réalisations";
 import Carport from "./pages/réa/Carport";
 import Charpente from "./pages/réa/Charpente";
 import Pergolas from "./pages/réa/Pergolas";
@@ -35,6 +36,7 @@ function App() {
         <Route path="Contact" exact element={<Contact />} />
         <Route path="Cgu" exact element={<Cgu />} />
         <Route path="Politiques" exact element={<Politiques />} />
+        <Route path="Réalisations" exact element={<Réalisations />} />
         <Route path="Carport" exact element={<Carport />} />
         <Route path="Charpente" exact element={<Charpente />} />
         <Route path="Pergolas" exact element={<Pergolas />} />

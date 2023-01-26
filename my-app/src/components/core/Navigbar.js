@@ -34,6 +34,7 @@ const Navigbar = () => {
               className="mx-auto"
               title="Nos Réalisations"
               id="collasible-nav-dropdown"
+              href="/Réalisations"
             >
               <NavDropdown.Item href="/Carport">
                 Carport Bois
@@ -93,6 +94,7 @@ const Navigbar = () => {
               className="mx-auto"
               title="Nos Réalisations"
               id="collasible-nav-dropdown"
+              href="/Réalisations"
             >
               <NavDropdown.Item href="/Carport">
                 Carport Bois
@@ -155,6 +157,7 @@ const Navigbar = () => {
               className="mx-auto"
               title="Nos Réalisations"
               id="collasible-nav-dropdown"
+              href="/Réalisations"
             >
               <NavDropdown.Item href="/Carport">
                 Carport Bois
@@ -177,7 +180,7 @@ const Navigbar = () => {
               <Nav.Link href="/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/Contact"> À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav.Item>{" "}
             <Nav.Item className="mx-auto">
               <Nav.Link href="/admin">admin</Nav.Link>
@@ -228,7 +231,7 @@ const Navigbar = () => {
               <Nav.Link href="/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact"> À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav.Item>{" "}
           </Nav>
           <Nav className="mx-auto">

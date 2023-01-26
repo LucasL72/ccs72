@@ -7,7 +7,7 @@ const Cgu = () => {
     <div>
       <MainLayout>
         <Container>
-          <h1 className="text-center">Cgu</h1>
+          <h2 className="text-center ssligne">Mentions légales</h2>
           <p>
             Conformément aux dispositions des articles 6-III et 19 de la Loi n°
             2004-575 du 21 juin 2004 pour la Confiance dans l'économie
@@ -23,9 +23,7 @@ const Cgu = () => {
             les informations suivantes :
           </p>
 
-          <h2>
-            <strong>1. Informations légales :</strong>
-          </h2>
+          <h3>1. Informations légales :</h3>
 
           <p>
             Statut du propriétaire : <strong>entreprise</strong>
@@ -83,9 +81,7 @@ const Cgu = () => {
 
           <p> </p>
 
-          <h2>
-            <strong>2. Présentation et principe </strong>
-          </h2>
+          <h3>2. Présentation et principe</h3>
 
           <p>
             Est désigné ci-après : <strong>Utilisateur</strong>, tout internaute
@@ -118,8 +114,7 @@ const Cgu = () => {
             susceptibles d'évoluer) sous sa responsabilité exclusive.
           </p>
 
-          <h2>3. Accessibilité </h2>
-          <br />
+          <h3>3. Accessibilité </h3>
           <br />
           <p>
             Le site https://www.charpente72.fr/est par principe accessible aux
@@ -134,7 +129,7 @@ const Cgu = () => {
             résultant d’une indisponibilité du service.
           </p>
 
-          <h2>4. Propriété intellectuelle </h2>
+          <h3>4. Propriété intellectuelle </h3>
 
           <p>
             <br />
@@ -154,7 +149,7 @@ const Cgu = () => {
             suivants du Code de Propriété Intellectuelle.
           </p>
 
-          <h2>5. Liens hypertextes et cookies </h2>
+          <h3>5. Liens hypertextes et cookies </h3>
           <p>
             Le site https://www.charpente72.fr/ contient un certain nombre de
             liens hypertextes vers d’autres sites (partenaires, informations …)
@@ -184,10 +179,10 @@ const Cgu = () => {
             firefox et suivez les instructions en fonction de votre version.
           </p>
 
-          <h2>
+          <h3>
             6. Protection des biens et des personnes - gestion des données
             personnelles{" "}
-          </h2>
+          </h3>
 
           <p>
             En France, les données personnelles sont notamment protégées par la
