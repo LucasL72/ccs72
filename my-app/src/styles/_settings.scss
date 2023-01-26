@@ -10,8 +10,8 @@ $color-2: rgba(242, 133, 0, 1);
 main {
   background-image: repeating-linear-gradient(
       45deg,
-      rgba(194, 194, 194, 0.1) 0px,
-      rgba(194, 194, 194, 0.1) 2px,
+      rgba(194, 194, 194, 0.192) 0px,
+      rgba(151, 150, 150, 0.1) 2px,
       transparent 2px,
       transparent 4px
     ),
@@ -57,7 +57,7 @@ main {
 a.dropdown-item {
   background-color: #adb5b7;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 19px;
 }
 a.dropdown-item:hover {
   background-color: #adb5b7;
@@ -71,7 +71,7 @@ a.nav-link:hover {
 }
 a.nav-link {
   color: white;
-  font-size: 20px;
+  font-size: 19px;
 }
 a {
   color: white;
@@ -125,7 +125,7 @@ a.nav-link:hover {
   text-decoration: none;
 }
 .linkb:hover {
-  color: black;
+  color: rgb(255, 117, 25);
   text-decoration: none;
 }
 

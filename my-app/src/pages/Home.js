@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { getEvent } from "../store/actions/EventActions";
 import ListBlog from "../components/Admin/Blog/ListBlog";
 import { getNews } from "../store/actions/ArticlesActions";
+import Réas from "../components/Réas";
 import CookieConsent from "react-cookie-consent";
 
 const Home = () => {
@@ -21,8 +22,9 @@ const Home = () => {
   return (
     <div>
       <MainLayout>
-        <h2 className="text-center ssligne">Découvrez nos actualités</h2>
+        <h2 className="text-center ssligne">Découvrez notre actualité</h2>
         <ListBlog list={listArticles} />
+        <Réas />
 
         <Events list={listEvents} />
 

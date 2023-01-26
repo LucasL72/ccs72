@@ -9,6 +9,7 @@ import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 import EmailIcon from "@mui/icons-material/Email";
 import jwt_decode from "jwt-decode";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 const Footer = () => {
   const CheckLoggedInFooter = () => {
@@ -44,7 +45,7 @@ const Footer = () => {
               <Nav.Link href="/Photos">Nos Photos</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav.Item>
           </Nav>
         </>
@@ -80,7 +81,7 @@ const Footer = () => {
               <Nav.Link href="/Photos">Nos Photos</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav.Item>
           </Nav>
         </>
@@ -119,7 +120,7 @@ const Footer = () => {
               <Nav.Link href="/Photos">Nos Photos</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="/admin">admin</Nav.Link>
@@ -158,7 +159,7 @@ const Footer = () => {
               <Nav.Link href="/Photos">Nos Photos</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav.Item>
           </Nav>
         </>
@@ -258,16 +259,29 @@ const Footer = () => {
                 Nous contacter
               </a>
             </div>
-            <Col md={12} className="d-flex justify-content-center">
+            <div className="text-center">
               <a
-                href="https://www.google.fr/maps/place/CHARPENTE+COUVERTURE+DE+LA+SARTHE/@48.0262747,0.3587736,18.56z/data=!4m12!1m6!3m5!1s0x47e2f4eeb66c036f:0x8eb4ba45a2bf2d72!2sEntreprise+David!8m2!3d48.0264294!4d0.3596636!3m4!1s0x0:0xc922eef2da4e970c!8m2!3d48.0262394!4d0.3599685"
+                className="linko"
+                href="https://www.facebook.com/CharpenteCouvertureSarthe72"
                 target="_blank"
                 rel="noreferrer"
-                className="linko"
               >
-                <AddLocationAltIcon sx={{ fontSize: 30 }} /> RN23 Le pré de
-                l'étang, 72470 Saint-Mars-la-Brière
+                <FacebookIcon sx={{ fontSize: 30 }} /> Rejoignez-nous sur
+                facebook
               </a>
+            </div>
+            <Col md={12}>
+              <div className="text-center">
+                <a
+                  href="https://www.google.fr/maps/place/CHARPENTE+COUVERTURE+DE+LA+SARTHE/@48.0262747,0.3587736,18.56z/data=!4m12!1m6!3m5!1s0x47e2f4eeb66c036f:0x8eb4ba45a2bf2d72!2sEntreprise+David!8m2!3d48.0264294!4d0.3596636!3m4!1s0x0:0xc922eef2da4e970c!8m2!3d48.0262394!4d0.3599685"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="linko"
+                >
+                  <AddLocationAltIcon sx={{ fontSize: 30 }} /> RN23 Le pré de
+                  l'étang, 72470 Saint-Mars-la-Brière
+                </a>
+              </div>
             </Col>
           </Col>
         </Row>

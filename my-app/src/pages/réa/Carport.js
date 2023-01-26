@@ -55,7 +55,7 @@ const Carport = () => {
             </Col>
           </Row>
 
-          <h1 className="text-center ssligne mt-3">Récents</h1>
+          <h1 className="text-center ssligne mt-3">Découvrez notre actualité</h1>
           <ListBlog list={listArticles} />
         </Container>
       </MainLayout>

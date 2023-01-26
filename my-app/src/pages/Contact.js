@@ -30,7 +30,7 @@ const Contact = () => {
                 <img
                   alt="carport"
                   src="./images/devanture.webp"
-                  className=" img-boder img-fluid d-flex justify-content-center scale rounded"
+                  className=" img-boder img-fluid d-flex justify-content-center rounded"
                   width="500"
                 ></img>
               </Col>

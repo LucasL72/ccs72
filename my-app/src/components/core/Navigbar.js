@@ -9,6 +9,7 @@ import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import CancelIcon from "@mui/icons-material/Cancel";
 import { useNavigate } from "react-router-dom";
 import jwt_decode from "jwt-decode";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 const Navigbar = () => {
   const CheckLoggedIn = () => {
@@ -36,9 +37,7 @@ const Navigbar = () => {
               id="collasible-nav-dropdown"
               href="/Réalisations"
             >
-              <NavDropdown.Item href="/Carport">
-                Carport Bois
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/Carport">Carport Bois</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/Charpente">
                 Charpente-Couvertures-Zingueries
@@ -96,9 +95,7 @@ const Navigbar = () => {
               id="collasible-nav-dropdown"
               href="/Réalisations"
             >
-              <NavDropdown.Item href="/Carport">
-                Carport Bois
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/Carport">Carport Bois</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/Charpente">
                 Charpente-Couvertures-Zingueries
@@ -159,9 +156,7 @@ const Navigbar = () => {
               id="collasible-nav-dropdown"
               href="/Réalisations"
             >
-              <NavDropdown.Item href="/Carport">
-                Carport Bois
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/Carport">Carport Bois</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/Charpente">
                 Charpente-Couvertures-Zingueries
@@ -210,9 +205,7 @@ const Navigbar = () => {
               <Nav.Link href="/">Accueil</Nav.Link>
             </Nav.Item>
             <NavDropdown title="Nos Réalisations" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/Carport">
-                Carport Bois
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/Carport">Carport Bois</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/Charpente">
                 Charpente-Couvertures-Zingueries
@@ -233,6 +226,16 @@ const Navigbar = () => {
             <Nav.Item>
               <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav.Item>{" "}
+          </Nav>
+          <Nav className="mx-auto">
+            <a
+              className="linko"
+              href="https://www.facebook.com/CharpenteCouvertureSarthe72"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FacebookIcon sx={{ fontSize: 50 }} />
+            </a>
           </Nav>
           <Nav className="mx-auto">
             <a className="btn-grad" href="tel: 02 43 89 64 02">
@@ -271,7 +274,7 @@ const Navigbar = () => {
             <img
               alt="Logo ccs72"
               src="../logo1.png"
-              width="175"
+              width="180"
               height="60"
               className="d-inline-block"
             />{" "}

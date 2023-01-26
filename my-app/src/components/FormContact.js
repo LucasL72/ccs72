@@ -7,6 +7,9 @@ import FloatingLabel from "react-bootstrap/FloatingLabel";
 import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 import { useDispatch } from "react-redux";
 import { createMessage, getMessage } from "../store/actions/MessActions";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import PhoneForwardedIcon from "@mui/icons-material/PhoneForwarded";
+
 import ReCAPTCHA from "react-google-recaptcha";
 
 const FormContact = () => {
@@ -58,13 +61,13 @@ const FormContact = () => {
       window.alert("Message envoyé ! ");
     }
   };
-
   return (
     <div>
       <h2 className="text-center ssligne mt-5">Nous contacter</h2>
+      <br></br>
       <Container fluid>
         <Row>
-          <Col md={8}>
+          <Col md={9}>
             <Form onSubmit={(e) => handleForm(e)}>
               <FloatingLabel
                 controlId="selectproduuits"
@@ -170,15 +173,15 @@ const FormContact = () => {
               </FloatingLabel>
               <br></br>
               <Row>
-                <Col md={9}>
+                <Col md={8}>
                   <Form.Check
                     type="checkbox"
                     id="checkbox"
-                    label="En envoyant ce formulaire, vous consentez à la collecte de vos données personnelles afin que votre demande puisse être traîtée"
+                    label="En envoyant ce formulaire, vous consentez à la collecte de vos données personnelles afin que votre demande puisse être traîtée."
                     required
                   />
                 </Col>
-                <Col md={2}>
+                <Col md={4}>
                   <a href="/Politiques">En savoir plus</a>
                 </Col>
               </Row>
@@ -195,6 +198,7 @@ const FormContact = () => {
                   Envoyer
                 </button>
               </div>
+              <br></br>
             </Form>
           </Col>
           <Col md={3}>
@@ -208,8 +212,30 @@ const FormContact = () => {
                 <AddLocationAltIcon color="success" sx={{ fontSize: 30 }} />{" "}
                 RN23 Le pré de l'étang, 72470 Saint-Mars-la-Brière
               </a>
+              <br></br>
+              <a
+                className="linkb"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.facebook.com/CharpenteCouvertureSarthe72"
+              >
+                <FacebookIcon color="primary" sx={{ fontSize: 40 }} />{" "}
+                Rejoignez-nous sur facebook
+              </a>
+              <br></br>
+              <a className="linkb" href="tel: 02 43 89 64 02">
+                <PhoneForwardedIcon color="success" sx={{ fontSize: 30 }} />{" "}
+                Contactez-nous
+              </a>
             </div>
-            <div className="map mb-3">
+            <br></br>
+            <p className="text-center">
+              {" "}
+              Nous intervenons dans un rayon de 20 km autour du Mans et de
+              Saint-Mars-la-Brière : Connérre-Beillé, Montfort-le-Gesnois,
+              Savigné l'Evêque, Yvré l'Evêque, Champagné.{" "}
+            </p>
+            <div className="map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1334.1707937057267!2d0.359664!3d48.02642900000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc922eef2da4e970c!2sCHARPENTE%20COUVERTURE%20DE%20LA%20SARTHE!5e0!3m2!1sfr!2sfr!4v1659082730063!5m2!1sfr!2sfr"
                 width="600"
@@ -219,12 +245,7 @@ const FormContact = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <p className="text-center">
-              {" "}
-              Nous intervenons dans un rayon de 20 km autour du Mans et de
-              Saint-Mars-la-Brière : Connérre-Beillé, Montfort-le-Gesnois,
-              Savigné l'Evêque, Yvré l'Evêque, Champagné.{" "}
-            </p>
+            <br></br>
           </Col>
         </Row>
       </Container>
