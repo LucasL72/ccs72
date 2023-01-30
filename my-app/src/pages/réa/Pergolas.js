@@ -18,7 +18,7 @@ const Pergolas = () => {
     <div>
       <MainLayout>
         <Container>
-          <h1 className="text-center ssligne">Pergolas Bois</h1>
+          <h2 className="text-center ssligne">Pergolas Bois</h2>
 
           <Row>
             <Col md={6} className="d-flex justify-content-center">
@@ -52,7 +52,7 @@ const Pergolas = () => {
           </Row>
         </Container>
 
-        <h1 className="text-center ssligne mt-3">Découvrez notre actualité</h1>
+        <h3 className="text-center ssligne mt-3">Découvrez notre actualité</h3>
         <ListBlog list={listArticles} />
       </MainLayout>
     </div>

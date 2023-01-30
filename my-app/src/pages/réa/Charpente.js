@@ -19,9 +19,9 @@ const Charpente = () => {
     <div>
       <MainLayout>
         <Container>
-          <h1 className="text-center ssligne">
+          <h2 className="text-center ssligne">
             Charpente-Couverture-Zinguerie
-          </h1>
+          </h2>
 
           <Row>
             <Col md={6} className="d-flex justify-content-center">
@@ -60,7 +60,7 @@ const Charpente = () => {
           </Row>
         </Container>
 
-        <h1 className="text-center ssligne mt-3">Découvrez notre actualité</h1>
+        <h3 className="text-center ssligne mt-3">Découvrez notre actualité</h3>
         <ListBlog list={listArticles} />
       </MainLayout>
     </div>

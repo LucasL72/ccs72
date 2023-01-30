@@ -36,7 +36,7 @@ const Footer = () => {
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Fenêtre de toit</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item>
               <Nav.Link href="/Blog">Notre Blog</Nav.Link>
@@ -45,7 +45,7 @@ const Footer = () => {
               <Nav.Link href="/Photos">Nos Photos</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact">Contact</Nav.Link>
+              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
             </Nav.Item>
           </Nav>
         </>
@@ -72,7 +72,7 @@ const Footer = () => {
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Fenêtre de toit</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item>
               <Nav.Link href="/Blog">Notre Blog</Nav.Link>
@@ -81,7 +81,7 @@ const Footer = () => {
               <Nav.Link href="/Photos">Nos Photos</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact">Contact</Nav.Link>
+              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
             </Nav.Item>
           </Nav>
         </>
@@ -111,7 +111,7 @@ const Footer = () => {
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Fenêtre de toit</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item>
               <Nav.Link href="/Blog">Notre Blog</Nav.Link>
@@ -120,7 +120,7 @@ const Footer = () => {
               <Nav.Link href="/Photos">Nos Photos</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact">Contact</Nav.Link>
+              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="/admin">admin</Nav.Link>
@@ -150,7 +150,7 @@ const Footer = () => {
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Fenêtre de toit</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item>
               <Nav.Link href="/Blog">Notre Blog</Nav.Link>
@@ -159,7 +159,7 @@ const Footer = () => {
               <Nav.Link href="/Photos">Nos Photos</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact">Contact</Nav.Link>
+              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
             </Nav.Item>
           </Nav>
         </>

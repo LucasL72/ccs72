@@ -19,7 +19,7 @@ const Velux = () => {
     <div>
       <MainLayout>
         <Container>
-          <h1 className="text-center ssligne">Velux</h1>
+          <h2 className="text-center ssligne">Fenêtre de toit</h2>
 
           <Row>
             <Col md={6} className="d-flex justify-content-center">
@@ -38,10 +38,14 @@ const Velux = () => {
             </Col>
             <Col md={12} className="mt-3">
               <p className="text-center">
-                Photos intérieur et extérieur de velux posé chez un particulier.
+                Photos intérieur et extérieur de fenêtre de toit posé chez un
+                particulier.<br></br> Une fenêtre de toit sert à apporter de la lumière
+                naturelle et de l'air frais à une pièce située sous les combles
+                d'un bâtiment. Elle peut également améliorer l'esthétique du
+                toit.
               </p>
               <p className="text-center gras">
-                Découvrez toute notre gamme de Velux.
+                Découvrez toute notre gamme de fenêtre de toit.
               </p>
               <br></br>
               <div className="text-center">
@@ -55,7 +59,7 @@ const Velux = () => {
           <br></br>
         </Container>
 
-        <h1 className="text-center ssligne mt-2">Récents</h1>
+        <h3 className="text-center ssligne mt-2">Récents</h3>
         <ListBlog list={listArticles} />
       </MainLayout>
     </div>

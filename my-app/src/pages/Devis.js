@@ -62,11 +62,11 @@ const Devis = () => {
     <div>
       <MainLayout>
         <Container>
-          <h1 className="text-center ssligne">
+          <h2 className="text-center ssligne">
             {" "}
             <RequestPageIcon sx={{ fontSize: 50 }} />
             Demande de Devis
-          </h1>
+          </h2>
 
           <Form onSubmit={(e) => handleForm(e)}>
             <FloatingLabel

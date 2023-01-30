@@ -28,6 +28,7 @@ const Home = () => {
 
         <Events list={listEvents} />
 
+        <h4 className="text-center ssligne mt-5">Nous contacter</h4>
         <FormContact />
 
         <CookieConsent

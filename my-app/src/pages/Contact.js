@@ -21,9 +21,9 @@ const Contact = () => {
       <MainLayout>
         <div>
           <Container>
-            <h1 className="text-center ssligne">
+            <h2 className="text-center ssligne">
               Charpente Couverture de la Sarthe
-            </h1>
+            </h2>
 
             <Row>
               <Col md={6} className="d-flex justify-content-center mb-3 mt-3">
@@ -36,7 +36,7 @@ const Contact = () => {
               </Col>
 
               <Col md={6} className="mb-4 mt-4">
-                <h2 className="gras text-center">
+                <h2 className="gras text-center ssligne3">
                   Présentation de l'entreprise{" "}
                 </h2>
                 <p className="justif">
@@ -130,7 +130,7 @@ const Contact = () => {
         </div>
 
         <Events list={listEvents} />
-
+        <h3 className="text-center ssligne mt-5">Nous contacter</h3>
         <FormContact />
       </MainLayout>
     </div>

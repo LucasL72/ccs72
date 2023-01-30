@@ -1,7 +1,16 @@
 header {
   height: 50vh;
-  padding: 120px;
-  background-color: aqua;
+  padding: 150px;
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.6),
+      rgba(149, 149, 149, 0.7),
+      rgba(100, 100, 100, 0.4)
+    ),
+    url(../../assets/images/5.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .event {
@@ -25,5 +34,4 @@ header {
     padding: 50px;
     background-color: aqua;
   }
-
 }

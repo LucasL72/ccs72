@@ -23,6 +23,11 @@ main {
     );
 }
 
+h1 {
+  color: #fff;
+  font-weight: 600;
+}
+
 .gras {
   color: transparent;
   background: rgb(209, 119, 15);
@@ -58,27 +63,28 @@ a.dropdown-item {
   background-color: #adb5b7;
   color: rgb(255, 255, 255);
   font-size: 19px;
+  font-weight: 550;
 }
 a.dropdown-item:hover {
   background-color: #adb5b7;
-  color: rgb(253, 110, 0);
+  color: rgb(255, 146, 63);
+  text-decoration: underline;
 }
 div.dropdown-menu.show {
   background-color: #adb5b7;
 }
-a.nav-link:hover {
-  color: #ffffff;
-}
 a.nav-link {
   color: white;
   font-size: 19px;
+  font-weight: 550;
 }
 a {
   color: white;
 }
 
 a.nav-link:hover {
-  color: rgb(253, 110, 0);
+  color: rgb(255, 146, 63);
+  text-decoration: underline;
 }
 
 .ssligne {
@@ -111,6 +117,20 @@ a.nav-link:hover {
     rgba(242, 133, 0, 1) 50%,
     rgb(143, 143, 143) 50%
   );
+  width: 100px;
+  content: "";
+  margin: 0 auto;
+}
+
+.ssligne3 {
+  margin-bottom: 10px;
+}
+
+.ssligne3:after {
+  display: block;
+  height: 4px;
+  background: $color-1;
+  background: linear-gradient(220deg, $color-1 50%, rgb(143, 143, 143) 50%);
   width: 100px;
   content: "";
   margin: 0 auto;
@@ -199,10 +219,6 @@ a.nav-link:hover {
   transition-timing-function: cubic-bezier(0.2, 3, 0.4, 1);
   &:hover {
     transform: scale(1.1, 1.1);
-  }
-
-  &:active {
-    transform: scale(1.05, 1.05);
   }
 }
 

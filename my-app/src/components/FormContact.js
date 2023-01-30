@@ -63,7 +63,6 @@ const FormContact = () => {
   };
   return (
     <div>
-      <h2 className="text-center ssligne mt-5">Nous contacter</h2>
       <br></br>
       <Container fluid>
         <Row>

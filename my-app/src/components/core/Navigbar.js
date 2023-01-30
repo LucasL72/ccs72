@@ -47,7 +47,7 @@ const Navigbar = () => {
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Fenêtre de toit</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item>
               <Nav.Link href="/Blog">Blog</Nav.Link>
@@ -56,7 +56,7 @@ const Navigbar = () => {
               <Nav.Link href="/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/Contact"> À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
             </Nav.Item>{" "}
           </Nav>
           <Nav className="mx-auto">
@@ -105,7 +105,7 @@ const Navigbar = () => {
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Fenêtre de toit</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item className="mx-auto">
               <Nav.Link href="/#/Blog">Blog</Nav.Link>
@@ -166,7 +166,7 @@ const Navigbar = () => {
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Fenêtre de toit</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item className="mx-auto">
               <Nav.Link href="/Blog">Blog</Nav.Link>
@@ -175,7 +175,7 @@ const Navigbar = () => {
               <Nav.Link href="/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/Contact">Contact</Nav.Link>
+              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
             </Nav.Item>{" "}
             <Nav.Item className="mx-auto">
               <Nav.Link href="/admin">admin</Nav.Link>
@@ -215,7 +215,7 @@ const Navigbar = () => {
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Fenêtre de toit</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item>
               <Nav.Link href="/Blog">Blog</Nav.Link>
@@ -224,7 +224,7 @@ const Navigbar = () => {
               <Nav.Link href="/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact">Contact</Nav.Link>
+              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
             </Nav.Item>{" "}
           </Nav>
           <Nav className="mx-auto">

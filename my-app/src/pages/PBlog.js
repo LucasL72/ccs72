@@ -14,7 +14,7 @@ const PBlog = () => {
   return (
     <div>
       <MainLayout>
-        <h1 className="text-center ssligne">Nos Actualités</h1>
+        <h2 className="text-center ssligne">Nos Actualités</h2>
         <ListBlog list={listArticles} />
       </MainLayout>
     </div>

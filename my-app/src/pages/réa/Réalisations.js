@@ -16,7 +16,7 @@ const Réalisations = () => {
     <div>
       <MainLayout>
         <Réas />
-        <h1 className="text-center ssligne mt-3">Découvrez nos actualités</h1>
+        <h2 className="text-center ssligne mt-3">Découvrez nos réalisations</h2>
         <ListBlog list={listArticles} />
       </MainLayout>
     </div>

@@ -16,7 +16,7 @@ const Photos = () => {
   return (
     <div>
       <MainLayout>
-        <h1 className="text-center ssligne">Photos</h1>
+        <h2 className="text-center ssligne">Photos</h2>
         <Album list={listPics} />
       </MainLayout>
     </div>
