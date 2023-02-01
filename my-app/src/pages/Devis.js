@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import MainLayout from "../layouts/MainLayout";
-import RequestPageIcon from "@mui/icons-material/RequestPage";
+import AssignmentIcon from "@mui/icons-material/Assignment";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -64,7 +64,7 @@ const Devis = () => {
         <Container>
           <h2 className="text-center ssligne">
             {" "}
-            <RequestPageIcon sx={{ fontSize: 50 }} />
+            <AssignmentIcon sx={{ fontSize: 50 }} />
             Demande de Devis
           </h2>
 
@@ -83,7 +83,7 @@ const Devis = () => {
                 <option>Carport Bois</option>
                 <option>Charpente /Couvertures / Zingueries</option>
                 <option>Pergolas Bois</option>
-                <option>Velux</option>
+                <option>Fenêtre de toit</option>
               </Form.Select>
             </FloatingLabel>
             <Row>

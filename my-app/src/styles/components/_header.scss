@@ -1,6 +1,6 @@
 header {
   height: 50vh;
-  padding: 150px;
+  padding: 120px;
   background-image: linear-gradient(
       90deg,
       rgba(2, 0, 36, 0.6),
@@ -11,6 +11,15 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+.titre-header {
+  font-family: $font-1;
+  font-weight: 800;
+  font-size: 80px;
+  color: rgba(255, 255, 255, 0.747);
+  box-shadow: rgba(240, 117, 46, 0.4) 5px 5px, rgba(240, 179, 46, 0.3) 10px 10px,
+    rgba(223, 130, 9, 0.2) 15px 15px, rgba(75, 189, 0, 0.1) 20px 20px,
+    rgba(240, 117, 46, 0.05) 25px 25px;
 }
 
 .event {
@@ -27,11 +36,39 @@ header {
   color: #fff;
   min-height: 25vh;
 }
-
+@media (max-width: 1030px) {
+  header {
+    height: 50vh;
+    padding: 120px;
+    background-color: aqua;
+  }
+  .titre-header {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.747);
+    font-weight: 600;
+  }
+}
 @media (max-width: 950px) {
   header {
     height: 30vh;
     padding: 50px;
     background-color: aqua;
+  }
+  .titre-header {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.747);
+    font-weight: 600;
+  }
+}
+@media (max-width: 450px) {
+  header {
+    height: 30vh;
+    padding: 50px;
+    background-color: aqua;
+  }
+  .titre-header {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.747);
+    font-weight: 600;
   }
 }

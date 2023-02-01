@@ -52,7 +52,7 @@ const Charpente = () => {
               </p>
               <br></br>
               <div className="text-center">
-                <a className="btn-grad" href="/#/Devis">
+                <a className="btn-grad" href="/Devis">
                   Avoir son devis
                 </a>
               </div>

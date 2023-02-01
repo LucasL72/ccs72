@@ -30,7 +30,7 @@ const Admin = () => {
     <div>
       <AdminLayout>
         <Container fluid>
-          <h1 className="text-center ssligne">Partie administration</h1>
+          <h2 className="text-center ssligne">Partie administration</h2>
           <Accordion defaultActiveKey={["0"]} alwaysOpen>
             <Accordion.Item eventKey="0">
               <Accordion.Header>Gestion des actualités</Accordion.Header>

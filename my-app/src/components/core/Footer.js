@@ -45,7 +45,7 @@ const Footer = () => {
               <Nav.Link href="/Photos">Nos Photos</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav.Item>
           </Nav>
         </>
@@ -81,7 +81,7 @@ const Footer = () => {
               <Nav.Link href="/Photos">Nos Photos</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav.Item>
           </Nav>
         </>
@@ -120,7 +120,7 @@ const Footer = () => {
               <Nav.Link href="/Photos">Nos Photos</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="/admin">admin</Nav.Link>
@@ -159,7 +159,7 @@ const Footer = () => {
               <Nav.Link href="/Photos">Nos Photos</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav.Item>
           </Nav>
         </>
@@ -250,16 +250,19 @@ const Footer = () => {
           <Col md={6}>
             <h4 className="text-center ssligne2"> Contact</h4>
 
-            <div className="text-center">
+            <div className="text-center mb-2">
               <a className="linko" href="tel: 02 43 89 64 02">
                 <PhoneIcon /> 02 43 89 64 02
               </a>{" "}
+              {""}
               <a href="/Contact" className="linko">
+                {""}
                 <EmailIcon sx={{ fontSize: 30 }} />
                 Nous contacter
               </a>
             </div>
-            <div className="text-center">
+            
+            <div className="text-center mb-2">
               <a
                 className="linko"
                 href="https://www.facebook.com/CharpenteCouvertureSarthe72"

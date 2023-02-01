@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import PhoneIcon from "@mui/icons-material/Phone";
+import AssignmentIcon from "@mui/icons-material/Assignment";
 import React from "react";
 import ModalCon from "../Modals/ModalCon";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
@@ -67,7 +68,8 @@ const Navigbar = () => {
           </Nav>
           <Nav className="mx-auto">
             <a className="btn-grad" href="/Devis">
-              Avoir son devis
+              <AssignmentIcon />
+              Devis
             </a>
           </Nav>
           <Nav>
@@ -114,7 +116,7 @@ const Navigbar = () => {
               <Nav.Link href="/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/Contact"> À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact"> Contact</Nav.Link>
             </Nav.Item>{" "}
           </Nav>
           <Nav className="mx-auto">
@@ -123,9 +125,10 @@ const Navigbar = () => {
               0243896402
             </a>{" "}
           </Nav>
-          <Nav>
+          <Nav className="mx-auto">
             <a className="btn-grad" href="/Devis">
-              Avoir son devis
+              <AssignmentIcon />
+              Devis
             </a>
           </Nav>
           <Nav>
@@ -175,7 +178,7 @@ const Navigbar = () => {
               <Nav.Link href="/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav.Item>{" "}
             <Nav.Item className="mx-auto">
               <Nav.Link href="/admin">admin</Nav.Link>
@@ -184,9 +187,10 @@ const Navigbar = () => {
           <Nav className="mx-auto">
             <p className="text-center user">{jwt_decode(userToken).email}</p>
           </Nav>
-          <Nav>
+          <Nav className="mx-auto">
             <a className="btn-grad" href="/Devis">
-              Avoir son devis
+              <AssignmentIcon />
+              Devis
             </a>
           </Nav>
           <Nav>
@@ -224,7 +228,7 @@ const Navigbar = () => {
               <Nav.Link href="/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav.Item>{" "}
           </Nav>
           <Nav className="mx-auto">
@@ -242,9 +246,10 @@ const Navigbar = () => {
               <PhoneIcon /> 0243896402
             </a>{" "}
           </Nav>
-          <Nav>
+          <Nav className="mx-auto">
             <a className="btn-grad" href="/Devis">
-              Avoir son devis
+              <AssignmentIcon />
+              Devis
             </a>
           </Nav>
           <Nav>

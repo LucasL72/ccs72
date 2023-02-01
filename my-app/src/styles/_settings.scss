@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 $font-1: "Roboto", sans-serif;
 $color-1: rgb(59, 147, 27);
 $color-2: rgba(242, 133, 0, 1);
@@ -22,12 +23,18 @@ main {
       rgb(255, 255, 255)
     );
 }
-
-h1 {
-  color: #fff;
-  font-weight: 600;
+.txt-intro {
+  font-size: 23px;
 }
 
+.gras-intro {
+  color: transparent;
+  background: rgb(209, 119, 15);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+  font-size: 25px;
+}
 .gras {
   color: transparent;
   background: rgb(209, 119, 15);
@@ -62,7 +69,7 @@ h1 {
 a.dropdown-item {
   background-color: #adb5b7;
   color: rgb(255, 255, 255);
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 550;
 }
 a.dropdown-item:hover {
@@ -75,7 +82,7 @@ div.dropdown-menu.show {
 }
 a.nav-link {
   color: white;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 550;
 }
 a {
@@ -199,6 +206,38 @@ a.nav-link:hover {
   text-decoration: none;
 }
 
+.contact {
+  padding: 30px;
+}
+.btn-contact {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border: #ff512f;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: all 1s;
+  font-weight: 600;
+  transition-timing-function: cubic-bezier(0.2, 3, 0.4, 1);
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+.btn-contact:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
 .btn-grad {
   background-image: linear-gradient(
     to right,
@@ -216,6 +255,7 @@ a.nav-link:hover {
   border-radius: 15px;
   text-decoration: none;
   transition: all 1s;
+  font-weight: 600;
   transition-timing-function: cubic-bezier(0.2, 3, 0.4, 1);
   &:hover {
     transform: scale(1.1, 1.1);
@@ -261,6 +301,31 @@ a.nav-link:hover {
   content: "";
   margin: 0 auto;
 }
+
+@media (max-width: 1200px) {
+  .btn-grad {
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #f09819 51%,
+      #ff512f 100%
+    );
+    margin: 3px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: #ff512f;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 1s;
+    transition-timing-function: cubic-bezier(0.2, 3, 0.4, 1);
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
 @media (max-width: 990px) {
   a.nav-link {
     color: white;
@@ -268,5 +333,16 @@ a.nav-link:hover {
   }
   a.dropdown-item {
     font-size: 17px;
+  }
+  .txt-intro {
+    font-size: 18px;
+  }
+  .gras-intro {
+    color: transparent;
+    background: rgb(209, 119, 15);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: bold;
+    font-size: 20px;
   }
 }

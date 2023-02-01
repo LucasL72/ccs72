@@ -1,6 +1,5 @@
 import React from "react";
 import FormContact from "../components/FormContact";
-import Events from "../components/Events";
 import MainLayout from "../layouts/MainLayout";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
@@ -8,11 +7,11 @@ import { getEvent } from "../store/actions/EventActions";
 import ListBlog from "../components/Admin/Blog/ListBlog";
 import { getNews } from "../store/actions/ArticlesActions";
 import Réas from "../components/Réas";
+import Intro from "../components/Intro";
 import CookieConsent from "react-cookie-consent";
 
 const Home = () => {
   const dispatch = useDispatch();
-  const listEvents = useSelector((state) => state.events.listEvents);
   const listArticles = useSelector((state) => state.articles.listArticles);
   useEffect(() => {
     dispatch(getNews());
@@ -22,15 +21,17 @@ const Home = () => {
   return (
     <div>
       <MainLayout>
-        <h2 className="text-center ssligne">Découvrez notre actualité</h2>
-        <ListBlog list={listArticles} />
+        <Intro />
         <Réas />
-
-        <Events list={listEvents} />
-
-        <h4 className="text-center ssligne mt-5">Nous contacter</h4>
-        <FormContact />
-
+        <h3 className="text-center ssligne">Découvrez notre actualité</h3>
+        <ListBlog list={listArticles} />
+        <br></br>
+        <div className="text-center contact">
+          <a className="btn-contact" href="/Contact">
+            Nous contacter
+          </a>
+        </div>
+        <br></br>
         <CookieConsent
           buttonText="J'accepte"
           location="bottom"

@@ -82,7 +82,7 @@ const FormContact = () => {
                   <option>Carport Bois</option>
                   <option>Charpente /Couvertures / Zingueries</option>
                   <option>Pergolas Bois</option>
-                  <option>Velux</option>
+                  <option>Fenêtre de toit</option>
                   <option disabled>--------------------------</option>
                   <option>Envoyer un message</option>
                 </Form.Select>

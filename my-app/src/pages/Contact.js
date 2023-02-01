@@ -21,6 +21,7 @@ const Contact = () => {
       <MainLayout>
         <div>
           <Container>
+            <br></br>
             <h2 className="text-center ssligne">
               Charpente Couverture de la Sarthe
             </h2>
@@ -36,40 +37,40 @@ const Contact = () => {
               </Col>
 
               <Col md={6} className="mb-4 mt-4">
-                <h2 className="gras text-center ssligne3">
+                <h3 className=" text-center ssligne3">
                   Présentation de l'entreprise{" "}
-                </h2>
+                </h3>
                 <p className="justif">
-                  Le siège social{" "}
-                  <b className="gras">
-                    ,situé à Saint-Mars La Brière dans la Sarthe (72),
-                  </b>{" "}
-                  est visible et accessible facilement depuis la RN 23 axe Le
-                  Mans / La Ferté Bernard.
+                  Le siège social ,situé à{" "}
+                  <span className="gras">Saint-Mars-La-Brière,</span> dans la{" "}
+                  <span className="gras">Sarthe (72)</span>, est visible et
+                  accessible facilement depuis la RN 23 axe Le Mans / La Ferté
+                  Bernard.
                   <br></br> <br></br>Nous disposons également d’un bureau quai
                   Ledru Rollin au Mans (entre le tunnel et la rue Voltaire) où
                   nous recevons uniquement sur rendez-vous.
                   <br></br>
                   <br></br>
-                  <b className="gras">
-                    L' entreprise Charpente Couverture de la Sarthe
-                  </b>{" "}
+                  L' entreprise {""}
+                  <span className="gras">
+                    Charpente Couverture de la Sarthe
+                  </span>{" "}
                   est une reprise de la SARL BOULAY Pascal située à Soulitré
                   (72370) depuis 18 ans.
                   <br></br> <br></br>L'équipe est composée de{" "}
-                  <b className="gras">
+                  <span className="gras">
                     {" "}
-                    salariés qualifiés dont 1 chef d'équipe - formation
-                    compagnon du devoir - 30 ans d'expérience, 2 ouvriers
-                    qualifiés 13 ans et 9 ans d'expérience.
-                  </b>
+                    salariés qualifiés dont 1 chef d'équipe (formation compagnon
+                    du devoir avec 30 ans d'expérience), 2 ouvriers qualifiés
+                    (13 ans et 9 ans d'expérience).
+                  </span>
                   <br></br>
                   <br></br>
-                  <b className="gras">Notre savoir faire : </b>{" "}
+                  <span className="gras">Notre savoir faire : </span>{" "}
                   Charpente-Couverture-Zinguerie-Carport bois-Pergolas
-                  bois-Velux
+                  bois- fenêtre de toit.
                 </p>
-                <h3 className="gras text-center">Ils nous soutiennent :</h3>
+                <p className=" gras text-center">Ils nous soutiennent :</p>
                 <Row>
                   <Col md={2} className="text-center mb-3">
                     <a
@@ -130,7 +131,7 @@ const Contact = () => {
         </div>
 
         <Events list={listEvents} />
-        <h3 className="text-center ssligne mt-5">Nous contacter</h3>
+        <h4 className="text-center ssligne mt-5 mb-3">Nous contacter</h4>
         <FormContact />
       </MainLayout>
     </div>

@@ -27,9 +27,9 @@ const BlogID = () => {
     <div>
       <MainLayout>
         <Container>
-          <h1 className="text-center ssligne text-break">
+          <h2 className="text-center ssligne text-break">
             {state && state.item.title}
-          </h1>
+          </h2>
           <Row>
             <Col md={12} className="d-flex img-border justify-content-center mb-4">
               <img

@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <Container>
-        <h1 className="text-center">Charpente Couverture de la Sarthe</h1>
+        <h1 className="text-center titre-header">Charpente Couverture de la Sarthe</h1>
       </Container>
     </header>
   );
