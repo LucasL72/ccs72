@@ -110,7 +110,7 @@ const Navigbar = () => {
               <NavDropdown.Item href="/Velux">Fenêtre de toit</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/#/Blog">Blog</Nav.Link>
+              <Nav.Link href="/Blog">Blog</Nav.Link>
             </Nav.Item>{" "}
             <Nav.Item className="mx-auto">
               <Nav.Link href="/Photos">Galerie</Nav.Link>

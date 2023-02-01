@@ -193,7 +193,7 @@ const Footer = () => {
                   className="logo"
                 >
                   <img
-                    src="./images/smabtp.webp"
+                    src="../images/smabtp.webp"
                     alt="logo smabtp"
                     className=" img-fluid"
                     height="75"
@@ -208,7 +208,7 @@ const Footer = () => {
                   className="logo"
                 >
                   <img
-                    src="./images/cobat.webp"
+                    src="../images/cobat.webp"
                     alt="logo cobat"
                     className="img-fluid"
                     height="75"
@@ -223,7 +223,7 @@ const Footer = () => {
                   className="logo"
                 >
                   <img
-                    src="./images/Artipole.webp"
+                    src="../images/Artipole.webp"
                     alt="logo artipole"
                     className="img-fluid"
                     height="75"
@@ -237,7 +237,7 @@ const Footer = () => {
                   href="https://www.ffbatiment.fr/"
                 >
                   <img
-                    src="./images/ffb.webp"
+                    src="../images/ffb.webp"
                     alt="logo ffb"
                     className="img-fluid"
                     height="75"
