@@ -48,7 +48,7 @@ const Navigbar = () => {
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Velux">Fenêtre de toit</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item>
               <Nav.Link href="/Blog">Blog</Nav.Link>
@@ -57,8 +57,18 @@ const Navigbar = () => {
               <Nav.Link href="/Photos">Galerie</Nav.Link>
             </Nav.Item>
             <Nav.Item className="mx-auto">
-              <Nav.Link href="/Contact">À propos de Nous</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav.Item>{" "}
+          </Nav>
+          <Nav className="mx-auto">
+            <a
+              className="linko"
+              href="https://www.facebook.com/CharpenteCouvertureSarthe72"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FacebookIcon sx={{ fontSize: 50 }} />
+            </a>
           </Nav>
           <Nav className="mx-auto">
             <a className="btn-grad" href="tel: 02 43 89 64 02">
@@ -107,7 +117,7 @@ const Navigbar = () => {
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Velux">Fenêtre de toit</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item className="mx-auto">
               <Nav.Link href="/Blog">Blog</Nav.Link>
@@ -118,6 +128,16 @@ const Navigbar = () => {
             <Nav.Item className="mx-auto">
               <Nav.Link href="/Contact"> Contact</Nav.Link>
             </Nav.Item>{" "}
+          </Nav>
+          <Nav className="mx-auto">
+            <a
+              className="linko"
+              href="https://www.facebook.com/CharpenteCouvertureSarthe72"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FacebookIcon sx={{ fontSize: 50 }} />
+            </a>
           </Nav>
           <Nav className="mx-auto">
             <a className="btn-grad" href="tel: 02 43 89 64 02">
@@ -169,7 +189,7 @@ const Navigbar = () => {
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Velux">Fenêtre de toit</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item className="mx-auto">
               <Nav.Link href="/Blog">Blog</Nav.Link>
@@ -219,7 +239,7 @@ const Navigbar = () => {
                 Pergolas Bois
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Velux">Fenêtre de toit</NavDropdown.Item>
+              <NavDropdown.Item href="/Velux">Velux</NavDropdown.Item>
             </NavDropdown>
             <Nav.Item>
               <Nav.Link href="/Blog">Blog</Nav.Link>

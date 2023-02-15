@@ -59,7 +59,7 @@ const Réalisations = () => {
             <Col md={6}>
               <div className="vign-rea text-center">
                 <a className="rea-lien" href="/Velux">
-                  <h2 className="ssligne3">Fenêtre de toit</h2>
+                  <h2 className="ssligne3">Velux</h2>
                   <img
                     alt="icon velux ccs72"
                     src="../images/icon-velux.webp"
@@ -68,7 +68,7 @@ const Réalisations = () => {
 
                 <p className="text-rea">
                   Pour profiter de la lumière du jour partout dans votre maison.
-                  Optez pour nos fenêtres de toit.
+                  Optez pour nos fenêtres de toit de la marque Velux.
                 </p>
               </div>
             </Col>

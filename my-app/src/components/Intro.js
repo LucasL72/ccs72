@@ -19,10 +19,10 @@ const Intro = () => {
             <span className="gras-intro">couverture</span>,
             <span className="gras-intro">zinguerie</span>,{" "}
             <span className="gras-intro">carport et pergolas bois</span> ainsi
-            que les <span className="gras-intro">fenêtres de toit</span>. Avec
-            nos 18 années d'expérience et une équipe de professionnels qualifié,
-            nous vous offrons des solutions durables et esthétiques pour tous
-            vos besoins en construction.
+            que les <span className="gras-intro">Velux</span>. Avec nos 18
+            années d'expérience et une équipe de professionnels qualifié, nous
+            vous offrons des solutions durables et esthétiques pour tous vos
+            besoins en construction.
           </p>
           <div className="text-center mb-5">
             <span className="gras-intro">Notre savoir faire :</span>
