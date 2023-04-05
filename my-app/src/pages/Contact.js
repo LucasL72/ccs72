@@ -30,9 +30,9 @@ const Contact = () => {
               <Col md={6} className="d-flex justify-content-center mb-3 mt-3">
                 <img
                   alt="carport"
-                  src="./images/devanture.webp"
+                  src="./images/devanture.jpg"
                   className=" img-boder img-fluid d-flex justify-content-center rounded"
-                  width="500"
+                  width="550"
                 ></img>
               </Col>
 
