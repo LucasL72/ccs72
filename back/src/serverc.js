@@ -20,8 +20,10 @@ class Server {
           "https://charpente72.fr",
           "http://www.charpente72.fr",
           "http://charpente72.fr",
+	  "https://ccs72.fr",
+	  "https://www.ccs72.fr",	
           "http://localhost:3000"
-        ],
+        ], 
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true,
       })
