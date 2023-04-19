@@ -13,7 +13,7 @@ const Intro = () => {
               {" "}
               Charpente Couverture de la Sarthe
             </span>{" "}
-            à <span className="gras-intro">Saint-Mars-la-Brière</span>. Nous
+            à <span className="gras-intro">Saint-Mars-la-Brière</span>, à 20km du Mans. Nous
             sommes spécialisés dans la{" "}
             <span className="gras-intro">charpente</span>,{" "}
             <span className="gras-intro">couverture</span>,
