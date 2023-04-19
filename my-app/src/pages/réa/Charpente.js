@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import ListBlog from "../../components/Admin/Blog/ListBlog";
 import { getNews } from "../../store/actions/ArticlesActions";
+import { Seo } from "../../components/Seo";
 
 const Charpente = () => {
   const dispatch = useDispatch();
@@ -18,6 +19,11 @@ const Charpente = () => {
   return (
     <div>
       <MainLayout>
+      <Seo
+          title="Charpente,Couverture et Zinguerie | Charpente Converture de la Sarthe"
+          description="Contactez-nous au 02 43 89 64 02 pour vos prochains projets en charpente,couverture ou zinguerie. Nous sommes spécialisé dans la charpente,couverture, la zinguerie, les carport bois, les pergolas bois et les velux. Nous intervenons dans un rayon de 20 km autour du Mans et de Saint-Mars-la-Brière."
+          type="webapp"
+        />
         <Container>
           <h2 className="text-center ssligne">
             Charpente-Couverture-Zinguerie

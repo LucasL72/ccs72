@@ -8,6 +8,7 @@ import Events from "../components/Events";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getEvent } from "../store/actions/EventActions";
+import { Seo } from "../components/Seo";
 
 const Contact = () => {
   const dispatch = useDispatch();
@@ -19,6 +20,11 @@ const Contact = () => {
   return (
     <div>
       <MainLayout>
+        <Seo
+          title="Nous Contacter | Charpente Converture de la Sarthe"
+          description="Contactez-nous au 02 43 89 64 02 pour vos prochains projets en Charpente et Couverture. Nous sommes spécialisé dans la charpente,couverture, la zinguerie, les carport bois, les pergolas bois et les velux. Nous intervenons dans un rayon de 20 km autour du Mans et de Saint-Mars-la-Brière."
+          type="webapp"
+        />
         <div>
           <Container>
             <br></br>
@@ -41,7 +47,7 @@ const Contact = () => {
                   Présentation de l'entreprise{" "}
                 </h3>
                 <p className="justif">
-                  Le siège social ,situé à{" "}
+                  Le siège social, situé à{" "}
                   <span className="gras">Saint-Mars-La-Brière,</span> dans la{" "}
                   <span className="gras">Sarthe (72)</span>, est visible et
                   accessible facilement depuis la RN 23 axe Le Mans / La Ferté
@@ -67,8 +73,8 @@ const Contact = () => {
                   <br></br>
                   <br></br>
                   <span className="gras">Notre savoir faire : </span>{" "}
-                  Charpente-Couverture-Zinguerie-Carport bois-Pergolas
-                  bois- fenêtre de toit.
+                  Charpente-Couverture-Zinguerie-Carport bois-Pergolas bois-
+                  fenêtre de toit.
                 </p>
                 <p className=" gras text-center">Ils nous soutiennent :</p>
                 <Row>

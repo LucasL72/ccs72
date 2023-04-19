@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import ListBlog from "../../components/Admin/Blog/ListBlog";
 import { getNews } from "../../store/actions/ArticlesActions";
+import { Seo } from "../../components/Seo";
 
 const Pergolas = () => {
   const dispatch = useDispatch();
@@ -17,6 +18,11 @@ const Pergolas = () => {
   return (
     <div>
       <MainLayout>
+        <Seo
+          title="Nos Pergolas Bois | Charpente Converture de la Sarthe"
+          description="Contactez-nous au 02 43 89 64 02 pour vos prochains projets de Pergolas en Bois. Nous sommes spécialisé dans la charpente,couverture, la zinguerie, les carport bois, les pergolas bois et les velux. Nous intervenons dans un rayon de 20 km autour du Mans et de Saint-Mars-la-Brière."
+          type="webapp"
+        />
         <Container>
           <h2 className="text-center ssligne">Pergolas Bois</h2>
 

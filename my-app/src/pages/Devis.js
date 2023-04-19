@@ -9,6 +9,7 @@ import FloatingLabel from "react-bootstrap/FloatingLabel";
 import { useDispatch } from "react-redux";
 import { createMessage, getMessage } from "../store/actions/MessActions";
 import ReCAPTCHA from "react-google-recaptcha";
+import { Seo } from "../components/Seo";
 const Devis = () => {
   const [produit, setProduit] = useState("");
   const [nom, setNom] = useState("");
@@ -61,6 +62,11 @@ const Devis = () => {
   return (
     <div>
       <MainLayout>
+        <Seo
+          title="Votre Devis | Charpente Converture de la Sarthe"
+          description="Contactez-nous au 02 43 89 64 02 pour vos prochains projets en Charpente et Couverture. Nous sommes spécialisé dans la charpente,couverture, la zinguerie, les carport bois, les pergolas bois et les velux. Nous intervenons dans un rayon de 20 km autour du Mans et de Saint-Mars-la-Brière."
+          type="webapp"
+        />
         <Container>
           <h2 className="text-center ssligne">
             {" "}
@@ -81,9 +87,9 @@ const Devis = () => {
               >
                 <option></option>
                 <option>Carport Bois</option>
-                <option>Charpente /Couvertures / Zingueries</option>
+                <option>Charpente / Couvertures / Zingueries</option>
                 <option>Pergolas Bois</option>
-                <option>Fenêtre de toit</option>
+                <option>Velux</option>
               </Form.Select>
             </FloatingLabel>
             <Row>

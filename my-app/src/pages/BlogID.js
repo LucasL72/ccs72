@@ -6,11 +6,12 @@ import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import { urlImgArt } from "../utils/url";
 import Moment from "react-moment";
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import "moment-timezone";
 import "moment/locale/fr";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { Seo } from "../components/Seo";
 
 const BlogID = () => {
   const { state } = useLocation();
@@ -26,12 +27,20 @@ const BlogID = () => {
   return (
     <div>
       <MainLayout>
+        <Seo
+          title={state && state.item.title}
+          description="Bienvenue sur le site de Charpente Converture de la Sarthe. Nous sommes spécialisé dans la charpente,couverture, la zinguerie, les carport bois, les pergolas bois et les velux. Nous intervenons dans un rayon de 20 km autour du Mans et de Saint-Mars-la-Brière."
+          type="webapp"
+        />
         <Container>
           <h2 className="text-center ssligne text-break">
             {state && state.item.title}
           </h2>
           <Row>
-            <Col md={12} className="d-flex img-border justify-content-center mb-4">
+            <Col
+              md={12}
+              className="d-flex img-border justify-content-center mb-4"
+            >
               <img
                 src={`${urlImgArt + state.item.imgarticle}`}
                 alt={state && state.item.title}
@@ -56,8 +65,8 @@ const BlogID = () => {
             </Col>
           </Row>
           <div className="text-start">
-            <Button variant="dark" className="mb-3"   onClick={() => toBlog()}>
-             <ArrowBackIcon sx={{ fontSize: 30 }} />
+            <Button variant="dark" className="mb-3" onClick={() => toBlog()}>
+              <ArrowBackIcon sx={{ fontSize: 30 }} />
             </Button>
           </div>
         </Container>

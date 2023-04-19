@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import ListBlog from "../../components/Admin/Blog/ListBlog";
 import { getNews } from "../../store/actions/ArticlesActions";
+import { Seo } from "../../components/Seo";
 
 const Carport = () => {
   const dispatch = useDispatch();
@@ -18,6 +19,11 @@ const Carport = () => {
   return (
     <div>
       <MainLayout>
+        <Seo
+          title="Nos Carports | Charpente Converture de la Sarthe"
+          description="Contactez-nous au 02 43 89 64 02 pour vos prochains projets de carports. Nous sommes spécialisé dans la charpente,couverture, la zinguerie, les carport bois, les pergolas bois et les velux. Nous intervenons dans un rayon de 20 km autour du Mans et de Saint-Mars-la-Brière."
+          type="webapp"
+        />
         <Container>
           <h2 className="text-center ssligne">Carport Bois</h2>
 
@@ -55,7 +61,9 @@ const Carport = () => {
             </Col>
           </Row>
 
-          <h3 className="text-center ssligne mt-3">Découvrez notre actualité</h3>
+          <h3 className="text-center ssligne mt-3">
+            Découvrez notre actualité
+          </h3>
           <ListBlog list={listArticles} />
         </Container>
       </MainLayout>
