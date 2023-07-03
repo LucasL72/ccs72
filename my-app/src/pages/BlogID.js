@@ -51,7 +51,7 @@ const BlogID = () => {
             </Col>
 
             <Col md={12}>
-              <p className="justif">{state && state.item.contenu}</p>
+              <p className="justif2">{state && state.item.contenu}</p>
               <p className="justif text-light">
                 Publié par {state && state.item.auteur} le{" "}
                 <Moment
